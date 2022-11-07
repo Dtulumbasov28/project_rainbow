@@ -7,7 +7,7 @@
 				</svg>
 				<!-- <img class="header__logo logo" src="@img/logo.svg" alt="логотип"> -->
 			</a>
-			<nav data-da=".menu__body,991.98,1" class="header__menu">
+			<nav data-da=".burger-menu__list,991.98,1" class="header__menu">
 				<ul class="header__list">
 					<li class="header__item">
 						<a href="#" class="header__link" data-hover="Главная">
@@ -41,37 +41,50 @@
 					</li>
 				</ul>
 			</nav>
+			<div class="header__contacts">
+				<a href="tel:+79999999999" class="header__contacts-phone">
+					<svg class="header__contacts-icon-phone">
+						<use xlink:href="@img/icons/icons.svg#svg-phone"></use>
+					</svg>
+					8 999 999 99-99</a>
+					<button class="header__button button">
+						<span>
+							Забронировать
+						</span>
+					</button>
+				<!-- <a href="#" class="header__contacts-adress">
+					<svg class="header__contacts-icon-location">
+						<use xlink:href="@img/icons/icons.svg#svg-location"></use>
+					</svg>
+					п. Лазаревское <br> ул Партизанская 17 А</a> -->
+			</div>
 			<!-- <div class="header__contacts">
 				<a href="tel:+79999999999" class="header__contacts-tel">8 999 999 99-99</a>
 				<a href="#" class="header__contacts-adress">п. Лазаревское <br> ул Партизанская 17 А</a>
 			</div> -->
 
-			<button class="header__button button">
-				<span>
-					Забронировать
-				</span>
-			</button>
-			<div class="header__burger-menu menu">
-				<button class="more-button icon-menu" aria-label="Menu Button">
-					<div class="menu-icon-wrapper">
-						<div class="menu-icon-line half first"></div>
-						<div class="menu-icon-line"></div>
-						<div class="menu-icon-line half last"></div>
+			<div class="header__burger-menu burger-menu">
+				<button class="burger-menu__button icon-menu">
+					<div class="burger-menu__icon-wrapper">
+						<div class="burger-menu__icon-line half first"></div>
+						<div class="burger-menu__icon-line"></div>
+						<div class="burger-menu__icon-line half last"></div>
 					</div>
 				</button>
 				<!-- <button type="button" class="menu__icon icon-menu"><span></span></button> -->
-				<div class="menu__body">
-					<div data-da=".header__body,991.98,2" class="header__contacts">
-						<a href="tel:+79999999999" class="header__contacts-tel">8 999 999 99-99</a>
-						<a href="#" class="header__contacts-adress">п. Лазаревское <br> ул Партизанская 17 А</a>
-					</div>
-					<ul class="menu__list">
-						<li class="menu__item"><a href="" class="menu__link">1</a></li>
-						<li class="menu__item"><a href="" class="menu__link">2</a></li>
-						<li class="menu__item"><a href="" class="menu__link">3</a></li>
-						<li class="menu__item"><a href="" class="menu__link">4</a></li>
-						<li class="menu__item"><a href="" class="menu__link">5</a></li>
-						<li class="menu__item"><a href="" class="menu__link">6</a></li>
+				<div class="burger-menu__body">
+				<a href="#" class="header__contacts-adress">
+					<svg class="header__contacts-icon-location">
+						<use xlink:href="@img/icons/icons.svg#svg-location"></use>
+					</svg>
+					п. Лазаревское <br> ул Партизанская 17 А</a>
+					<ul class="burger-menu__list">
+						<li class="burger-menu__item"><a href="" class="burger-menu__link">1</a></li>
+						<li class="burger-menu__item"><a href="" class="burger-menu__link">2</a></li>
+						<li class="burger-menu__item"><a href="" class="burger-menu__link">3</a></li>
+						<li class="burger-menu__item"><a href="" class="burger-menu__link">4</a></li>
+						<li class="burger-menu__item"><a href="" class="burger-menu__link">5</a></li>
+						<li class="burger-menu__item"><a href="" class="burger-menu__link">6</a></li>
 					</ul>
 				</div>
 			</div>
