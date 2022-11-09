@@ -40,6 +40,7 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 $pc: em(
   $containerWidth
 ); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$notebook: em(1239.98); // Ноутбуки
 $tablet: em(991.98); // Планшеты, некоторые телефоны в горизонтальном положении
 $mobile: em(767.98); // Телефоны L
 $mobileSmall: em(479.98); // Телефоны S
