@@ -1,0 +1,72 @@
+.about {
+  background-color: #faf8f0;
+  padding-top: 180px;
+  padding-bottom: 120px;
+  // .about__container
+
+  &__container {
+  }
+
+  // .about__body
+
+  &__body {
+    display: flex;
+    column-gap: 130px;
+    justify-content: space-between;
+  }
+
+  // .about__block-video
+
+  &__block-video {
+    position: relative;
+    width: 60%;
+
+    &::before {
+      content: "";
+      background-image: url("@img/about__video-preview.jpg");
+      background-size: 100%;
+      position: absolute;
+      top: -60px;
+      right: -70px;
+      width: 100%;
+      height: 100%;
+      opacity: 0.4;
+      border-radius: 10px;
+    }
+  }
+
+  // .about__video-player
+
+  &__video-player {
+  }
+
+  // .about__block-text
+
+  &__block-text {
+    width: 40%;
+  }
+
+  // .about__title
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  // .about__text
+
+  &__text {
+    font-size: 24px;
+    margin-bottom: 18px;
+    line-height: math.div(30, 26);
+  }
+}
+.title {
+}
+.main {
+  // .main__button
+
+  &__button {
+  }
+}
+.button {
+}

@@ -1,0 +1,92 @@
+.main {
+  position: relative;
+
+  // .main__slider
+
+  &__slider {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  // .main__slider-pagination
+
+  &__slider-pagination {
+    width: 60px;
+    height: 8px;
+    top: 22vh;
+  }
+
+  // .main__slider-wrapper
+
+  &__slider-wrapper {
+  }
+
+  // .main__slider-slide
+
+  &__slider-slide {
+    object-fit: cover;
+  }
+
+  // .main__slider-button
+
+  &__slider-button {
+  }
+
+  // .main__container
+
+  &__container {
+    padding-top: 25vh;
+    padding-bottom: 30vh;
+  }
+
+  // .main__body
+
+  &__body {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+  }
+
+  // .main__title
+
+  &__title {
+    font-size: 62px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    line-height: math.div(58, 48);
+  }
+
+  // .main__text
+
+  &__text {
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+
+  // .main__button
+
+  &__button {
+  }
+}
+.swiper {
+}
+.swiper-pagination {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.title {
+}
+.button {
+}
