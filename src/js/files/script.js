@@ -8,7 +8,7 @@ var player = new Plyr('.about__video-player');
 
 function weatherBalloon( cityID ) {
 	var key = 'c87e30dc724a6837d6b6b97a464a2670';
-	fetch('https://api.openweathermap.org/data/2.5/weather?id=' + 536625+ '&appid=' + key)  
+	fetch('https://api.openweathermap.org/data/2.5/weather?id=' + 536625+ '&appid=' + key + '&lang=RU')  
 	.then(function(resp) { return resp.json() }) // Convert data to json
 	.then(function(data) {
 		drawWeather(data); // Call drawWeather
@@ -40,7 +40,7 @@ function drawWeather( d ) {
 	
 	document.getElementById('description').innerHTML = description;
 	document.getElementById('temp').innerHTML = celcius + '&deg;';
-	document.getElementById('location').innerHTML = d.name;
+	// document.getElementById('location').innerHTML = d.name;
 	
 	if( description.indexOf('rain') > 0 ) {
   	document.body.className = 'rainy';
