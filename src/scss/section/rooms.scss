@@ -1,0 +1,129 @@
+.rooms {
+  // .rooms__container
+
+  &__container {
+  }
+
+  // .rooms__body
+
+  &__body {
+  }
+
+  // .rooms__slider
+
+  &__slider {
+  }
+
+  // .rooms__slider-wrapper
+
+  &__slider-wrapper {
+  }
+
+  // .rooms__slide
+
+  &__slide {
+  }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.room {
+  // .room__img-slider
+
+  &__img-slider {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  // .room__img-wrapper
+
+  &__img-wrapper {
+    margin-bottom: 6px;
+  }
+
+  // .room__img
+
+  &__img {
+  }
+
+  // .room__block
+  &__block {
+    display: flex;
+    column-gap: 60px;
+  }
+
+  // .room__text
+
+  &__text {
+    width: 56%;
+  }
+
+  // .room__title
+
+  &__title {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  // .room__desc
+
+  &__desc {
+    line-height: math.div(20, 16);
+  }
+
+  // .room__icons
+
+  &__icons {
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  // .room__icons-item
+
+  &__icons-item {
+    display: flex;
+    column-gap: 20px;
+    line-height: math.div(20, 16);
+  }
+
+  // .room__icons-item-img
+
+  &__icons-item-img {
+    min-width: 50px;
+    min-height: 50px;
+    width: 50px;
+    height: 50px;
+    fill: $mainColor;
+  }
+
+  // .room__icons-item-text
+
+  &__icons-item-text {
+  }
+}
+.swiper-slide {
+}
+.room-img {
+  // .room-img__slider-pagination
+
+  &__slider-pagination {
+    display: flex;
+    column-gap: 10px;
+    position: unset;
+    justify-content: center;
+  }
+}
+.swiper-pagination {
+}
+.swiper-button-wrapper {
+}
+.swiper-button {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}

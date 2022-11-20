@@ -72,6 +72,9 @@
   // .main__button
 
   &__button {
+    span {
+      border-color: transparent;
+    }
   }
 }
 .swiper {

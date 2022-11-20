@@ -102,47 +102,89 @@
   transform: translate3d(0px, 0px, 0px) scaleX(0.333333) scaleY(1);
   transform-origin: left top;
 }
+.swiper-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 10px;
+}
+.swiper-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid $mainColor;
+  column-gap: 10px;
 
+  & svg {
+    width: 35px;
+    height: 35px;
+    fill: $mainColor;
+    transition: all 0.2s;
+  }
 
+  &:active {
+    & svg {
+      transform: scale(1.1);
+      transition: all 0.2s;
+    }
+  }
+}
+.swiper-button-prev {
+  transform: rotate(180deg);
+}
+.swiper-pagination-bullet {
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid $mainColor;
+
+  &-active {
+    background-color: $mainColor;
+    transition: all 0.3s;
+  }
+}
 // Стили для плеера Plyr
 
 .plyr {
-	border-radius: 10px;
-	&__poster {
-	  background-size: cover;
-	}
-	&__control {
-	  &:hover {
-		 background-color: $mainColorOrange !important;
-	  }
-	}
-	&__control--overlaid {
-	  width: 100px !important;
-	  height: 100px !important;
-	  background-color: #fff !important;
-	  border: 1px solid #fff;
-	  & svg {
-		 fill: $mainColorOrange;
-		 margin-left: auto;
-		 margin-right: auto;
-		 left: 2px;
-		 width: 40px;
-		 height: 40px;
-	  }
-	  &:hover {
-		 background-color: transparent !important;
-		 & svg {
-			fill: $mainColorOrange;
-		 }
-	  }
-	}
- 
-	&--full-ui input[type="range"] {
-	  color: $mainColorOrange !important;
-	}
- 
-	&__menu {
-	  display: none;
-	}
- }
- 
+  &__poster {
+    background-size: cover;
+  }
+  &__control {
+    &:hover {
+      background-color: $mainColorOrange !important;
+    }
+  }
+  &__control--overlaid {
+    width: 100px !important;
+    height: 100px !important;
+    background-color: #fff !important;
+    border: 1px solid #fff;
+    & svg {
+      fill: $mainColorOrange;
+      margin-left: auto;
+      margin-right: auto;
+      left: 2px;
+      width: 40px;
+      height: 40px;
+    }
+    &:hover {
+      background-color: transparent !important;
+      & svg {
+        fill: $mainColorOrange;
+      }
+    }
+  }
+
+  &--full-ui input[type="range"] {
+    color: $mainColorOrange !important;
+  }
+
+  &__menu {
+    display: none;
+  }
+}
