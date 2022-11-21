@@ -104,8 +104,16 @@
 }
 .swiper-button-wrapper {
   display: flex;
-  justify-content: flex-end;
   column-gap: 10px;
+
+  &-rooms {
+    justify-content: flex-end;
+  }
+  &-services {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
 .swiper-button {
   display: flex;
@@ -122,13 +130,6 @@
     height: 35px;
     fill: $mainColor;
     transition: all 0.2s;
-  }
-
-  &:active {
-    & svg {
-      transform: scale(1.1);
-      transition: all 0.2s;
-    }
   }
 }
 .swiper-button-prev {
