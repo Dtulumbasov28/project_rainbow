@@ -72,6 +72,10 @@
   }
 }
 
+// Стили для галереи lightGallery
+.lg-backdrop.in {
+  opacity: 0.5 !important;
+}
 // Стили для слайдера Swiper
 
 .swiper-pagination {
@@ -130,6 +134,16 @@
     height: 35px;
     fill: $mainColor;
     transition: all 0.2s;
+  }
+
+  &-services {
+    width: 40px;
+    height: 40px;
+
+    & svg {
+      width: 28px;
+      height: 28px;
+    }
   }
 }
 .swiper-button-prev {

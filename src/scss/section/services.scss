@@ -1,4 +1,6 @@
 .services {
+  background-color: #faf8f0;
+  padding-top: 100px;
   padding-bottom: 100px;
   // .services__container
 
@@ -16,12 +18,13 @@
   &__body {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 4%;
   }
 
   // .services__spollers
 
   &__spollers {
-    width: 50%;
+    width: 46%;
     display: flex;
     flex-direction: column;
     row-gap: 50px;
@@ -49,6 +52,15 @@
   // .services-spollers__item
 
   &__item {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -20px;
+      height: 1px;
+      width: 100%;
+      background-color: $mainColorOrange;
+    }
   }
 
   // .services-spollers__title
@@ -62,6 +74,7 @@
   // .services-spollers__body
 
   &__body {
+    line-height: math.div(22, 18);
   }
 }
 .swiper {

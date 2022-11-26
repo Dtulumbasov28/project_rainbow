@@ -1,4 +1,7 @@
 .rooms {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   // .rooms__container
 
   &__container {
@@ -33,13 +36,13 @@
 
   &__img-slider {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
 
   // .room__img-wrapper
 
   &__img-wrapper {
-    margin-bottom: 6px;
+    margin-bottom: 14px;
   }
 
   // .room__img
@@ -62,15 +65,26 @@
   // .room__title
 
   &__title {
-    font-size: 26px;
+    display: inline-block;
+    position: relative;
+    font-size: 32px;
     font-weight: 500;
     margin-bottom: 12px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -30px;
+      width: 40px;
+      height: 6px;
+      background-color: $mainColorOrange;
+    }
   }
 
   // .room__desc
 
   &__desc {
-    line-height: math.div(20, 16);
+    line-height: math.div(22, 16);
   }
 
   // .room__icons

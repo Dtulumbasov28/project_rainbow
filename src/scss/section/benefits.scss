@@ -44,9 +44,9 @@
     flex-direction: column;
     align-items: center;
 
-   //  border: 1px solid $mainColor;
-   //  border-radius: 10px;
-   //  padding: 10px 12px;
+    //  border: 1px solid $mainColor;
+    //  border-radius: 10px;
+    //  padding: 10px 12px;
   }
 
   // .benefits__card-icon
@@ -69,6 +69,7 @@
   // .benefits__card-text
 
   &__card-text {
+    line-height: math.div(20, 16);
   }
 }
 .title {

@@ -49,7 +49,18 @@
   // .about__title
 
   &__title {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
     margin-bottom: 20px;
+
+    &::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: $mainColorOrange;
+    }
   }
 
   // .about__text
