@@ -983,7 +983,9 @@ section {
   top: 22vh;
 }
 
-.main__slider-slide {
+.main__slider-slide img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
