@@ -1,5 +1,6 @@
 {
-	"name": "fls-start",
+	"name": "project-rainbow",
+	"homepage": "https://dtulumbasov28.github.io/project_rainbow",
 	"version": "3.0.0",
 	"description": "Start template with Gulp and Webpack",
 	"author": "FLS",
@@ -11,11 +12,12 @@
 		"build": "gulp build --build",
 		"sprite": "gulp sprite",
 		"fonts": "gulp fonts --rewrite",
-		"deploy": "gulp deployFTP --build",
 		"zip": "gulp deployZIP --build",
 		"devbuild": "gulp build --build --nowebp",
 		"tmp": "gulp -f gulpfile.tmp.js",
-		"bem": "fls-bemtree-from-html"
+		"bem": "fls-bemtree-from-html",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist"
 	},
 	"devDependencies": {
 		"copy-webpack-plugin": "latest",
@@ -23,6 +25,7 @@
 		"del": "latest",
 		"file-include-webpack-plugin-replace": "latest",
 		"fls-bemtree-from-html": "^1.0.0",
+		"gh-pages": "^4.0.0",
 		"gulp": "latest",
 		"gulp-autoprefixer": "latest",
 		"gulp-clean-css": "latest",

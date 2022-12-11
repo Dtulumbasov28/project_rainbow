@@ -29,7 +29,11 @@
   // .main__slider-slide
 
   &__slider-slide {
-    object-fit: cover;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   // .main__slider-button
