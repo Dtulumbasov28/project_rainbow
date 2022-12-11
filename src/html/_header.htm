@@ -3,39 +3,44 @@
 		<div class="header__body">
 			<a class="header__logo logo" href="#">
 				<svg>
-					<use xlink:href="@img/icons/icons.svg#svg-logo"></use>
+					<use xlink:href="@img/icons/icons.svg#svg-logo-black"></use>
 				</svg>
 				<!-- <img class="header__logo logo" src="@img/logo.svg" alt="логотип"> -->
 			</a>
-			<nav data-da=".burger-menu__body,991.98,1" class="header__menu">
+			<nav data-da=".burger-menu__body,1239.98,1" class="header__menu">
 				<ul class="header__list">
 					<li class="header__item burger-menu__item">
-						<a href="#" class="header__link" data-hover="Главная">
+						<a href="#" data-goto=".header" class="header__link">
 							Главная
 						</a>
 					</li>
 					<li class="header__item burger-menu__item">
-						<a href="#" class="header__link" data-hover="О нас">
+						<a href="#" data-goto=".about" class="header__link">
 							О нас
 						</a>
 					</li>
+					<!-- <li class="header__item burger-menu__item">
+						<a href="#" data-goto=".benefits" class="header__link">
+							Преимущества
+						</a>
+					</li> -->
 					<li class="header__item burger-menu__item">
-						<a href="#" class="header__link" data-hover="Размещение">
-							Размещение
+						<a href="#" data-goto=".rooms" class="header__link">
+							Номера
 						</a>
 					</li>
 					<li class="header__item burger-menu__item">
-						<a href="#" class="header__link" data-hover="Галерея">
+						<a href="#" data-goto=".gallery" class="header__link">
 							Галерея
 						</a>
 					</li>
 					<li class="header__item burger-menu__item">
-						<a href="#" class="header__link" data-hover="Отзывы">
-							Отзывы
+						<a href="#" data-goto=".gallery" class="header__link">
+							Партнеры
 						</a>
 					</li>
 					<li class="header__item burger-menu__item">
-						<a href="#" class="header__link" data-hover="Контакты">
+						<a href="#" data-goto=".map" class="header__link">
 							Контакты
 						</a>
 					</li>
@@ -43,24 +48,37 @@
 			</nav>
 
 			<div class="header__contacts">
-				<a href="tel:+79999999999" class="header__contacts-phone">
+				<a href="tel:+79999999999" class="header__contacts-elem header__contacts-phone">
 					<svg class="header__contacts-icon-phone">
 						<use xlink:href="@img/icons/icons.svg#svg-phone"></use>
 					</svg>
 					<span>8 999 999 99-99</span>
 				</a>
-				<a href="#" class="header__contacts-adress">
+				<a href="#" class="header__contacts-elem header__contacts-messengers">
+					<svg class="header__contacts-icon-vk">
+						<use xlink:href="@img/icons/icons.svg#svg-vk"></use>
+					</svg>
+					<span>ВКонтакте</span>
+				</a>
+				<a href="#" class="header__contacts-elem header__contacts-adress">
 					<svg class="header__contacts-icon-location">
 						<use xlink:href="@img/icons/icons.svg#svg-location"></use>
 					</svg>
 					<span>Лазаревское, <br> Партизанская 17 А</span>
 				</a>
+				<a href="#" class="header__contacts-elem header__contacts-messengers">
+					<svg class="header__contacts-icon-whatsapp">
+						<use xlink:href="@img/icons/icons.svg#svg-whatsapp"></use>
+					</svg>
+					<span>WhatsApp</span>
+
+				</a>
 			</div>
-			<button class="header__button button">
+			<!-- <button class="header__button button">
 				<span>
 					Забронировать
 				</span>
-			</button>
+			</button> -->
 
 			<!-- <div class="header__contacts">
 				<a href="tel:+79999999999" class="header__contacts-tel">8 999 999 99-99</a>

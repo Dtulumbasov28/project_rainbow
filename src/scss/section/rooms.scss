@@ -7,9 +7,19 @@
   &__container {
   }
 
+  // .rooms__title
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
   // .rooms__body
 
   &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
   }
 
   // .rooms__slider
@@ -85,6 +95,20 @@
 
   &__desc {
     line-height: math.div(22, 16);
+	 margin-bottom: 16px;
+  }
+
+  // .room__button
+
+  &__button {
+    & span {
+      border-color: $mainColorFonts;
+
+      &:hover {
+        border-color: $mainColorFonts;
+        background-color: $mainColorFonts;
+      }
+    }
   }
 
   // .room__icons
@@ -111,7 +135,7 @@
     min-height: 50px;
     width: 50px;
     height: 50px;
-    fill: $mainColor;
+    fill: $mainColorFonts;
   }
 
   // .room__icons-item-text
@@ -119,8 +143,7 @@
   &__icons-item-text {
   }
 }
-.swiper-slide {
-}
+
 .room-img {
   // .room-img__slider-pagination
 
@@ -131,13 +154,43 @@
     justify-content: center;
   }
 }
-.swiper-pagination {
-}
-.swiper-button-wrapper {
-}
-.swiper-button {
-}
 .swiper-button-prev {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  border: unset;
+  border-radius: unset;
+  height: calc(100% - 30px);
+  background-color: $mainColor;
+  opacity: 0.7;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+
+    & svg {
+      transform: scale(1.2) translateX(2px);
+    }
+  }
 }
 .swiper-button-next {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  border: unset;
+  border-radius: unset;
+  height: calc(100% - 30px);
+  background-color: $mainColor;
+  opacity: 0.7;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+
+    & svg {
+      transform: scale(1.2) translateX(2px);
+    }
+  }
 }

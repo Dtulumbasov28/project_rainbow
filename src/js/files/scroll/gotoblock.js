@@ -38,7 +38,7 @@ export let gotoBlock = (targetBlock, noHeader = false, speed = 500, offsetTop = 
 				behavior: "smooth"
 			});
 		}
-		FLS(`[gotoBlock]: Юхуу...едем к ${targetBlock}`);
+		// FLS(`[gotoBlock]: Юхуу...едем к ${targetBlock}`);
 	} else {
 		FLS(`[gotoBlock]: Ой ой..Такого блока нет на странице: ${targetBlock}`);
 	}

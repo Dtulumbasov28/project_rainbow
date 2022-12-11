@@ -1,7 +1,7 @@
 .about {
   background-color: #faf8f0;
-  padding-top: 180px;
-  padding-bottom: 120px;
+  padding-top: 100px;
+  padding-bottom: 60px;
   // .about__container
 
   &__container {
@@ -26,18 +26,19 @@
       background-image: url("@img/about__video-preview.jpg");
       background-size: 100%;
       position: absolute;
-      top: -60px;
-      right: -70px;
+      top: -50px;
+      right: -50px;
       width: 100%;
       height: 100%;
       opacity: 0.4;
-      // border-radius: 10px;
     }
   }
 
   // .about__video-player
 
   &__video-player {
+    width: 718px;
+	 position: relative;
   }
 
   // .about__block-text
@@ -69,6 +70,23 @@
     font-size: 24px;
     margin-bottom: 18px;
     line-height: math.div(30, 26);
+  }
+
+  // .about__button
+
+  &__button {
+    &::before {
+      background-color: transparent;
+      &:hover {
+      }
+    }
+    & span {
+      border-color: $mainColorFonts;
+
+      &:hover {
+        background-color: $mainColorFonts;
+      }
+    }
   }
 }
 .title {

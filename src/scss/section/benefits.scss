@@ -1,6 +1,6 @@
 .benefits {
-  padding-top: 100px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
   // .benefits__container
 
@@ -53,7 +53,7 @@
 
   &__card-icon {
     & svg {
-      fill: $mainColor;
+      fill: $mainColorFonts;
       width: 120px;
       height: 120px;
     }

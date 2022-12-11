@@ -14,10 +14,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 18px;
+    @include adaptiveValue("column-gap", 28, 16, 1400, 768, 1);
 
-    font-size: 18px;
-    color: #fff;
+    color: #000;
   }
 
   // .header__logo
@@ -39,13 +38,11 @@
   // .header__list
 
   &__list {
-    @include adaptiveValue("font-size", 18, 16, 1400, 992, 1);
-    @include adaptiveValue("column-gap", 20, 14, 1400, 992, 1);
+    @include adaptiveValue("font-size", 20, 16, 1400, 992, 1);
+    @include adaptiveValue("column-gap", 20, 12, 1400, 992, 1);
     display: flex;
-    font-size: 18px;
-    font-weight: 300;
 
-    @media (max-width: $tablet) {
+    @media (max-width: $notebook) {
       flex-direction: column;
     }
   }
@@ -66,7 +63,7 @@
       position: absolute;
       width: 100%;
       height: 1px;
-      background: #fff;
+      background: $mainColorFonts;
       top: 100%;
       left: 0;
       pointer-events: none;
@@ -88,104 +85,81 @@
 
   &__contacts {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     row-gap: 10px;
 
-    // .header__contacts-icon-phone
-    &-icon-phone {
-      width: 20px;
-      height: 20px;
-      min-width: 20px;
-      min-height: 20px;
-      fill: #fff;
-      transition: all 0.3s;
+    @media (max-width: $notebook) {
+      flex-wrap: unset;
+      column-gap: 20px;
     }
-    // .header__contacts-icon-location
-    &-icon-location {
-      width: 20px;
-      height: 20px;
-      min-width: 20px;
-      min-height: 20px;
-      fill: #fff;
+
+    // svg
+    & svg {
+      width: 26px;
+      height: 26px;
+
+      fill: #000;
       transition: all 0.3s;
-    }
-  }
 
-  // .header__contacts-phone
-
-  &__contacts-phone {
-    @include adaptiveValue("font-size", 20, 16, 1400, 992, 1);
-
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-    font-weight: 400;
-    white-space: nowrap;
-
-    &:hover {
-      & .header__contacts-icon-phone {
-        fill: $mainColorOrange;
-        transition: all 0.3s;
+      @media (max-width: $notebook) {
+        width: 20px;
+        height: 20px;
       }
     }
-    //  &::before {
-    //    content: "";
-    //    background-image: url("@img/phone.svg");
-    //    background-size: 100%;
-    //    background-repeat: no-repeat;
-    //    width: 20px;
 
-    //    height: 20px;
-    //    position: relative;
-    //  }
+    // .header__contacts-elem
+    &-elem {
+      @include adaptiveValue("font-size", 20, 16, 1400, 1240, 1);
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      white-space: nowrap;
+
+      &:hover {
+        & svg {
+          fill: $mainColorOrange;
+          transition: all 0.3s;
+        }
+      }
+    }
+
+    // .header__contacts-messengers
+    &-messengers {
+      @media (max-width: $tablet) {
+        & span {
+          display: none;
+        }
+      }
+    }
+
+    &-icon-vk {
+      width: 35px !important;
+      height: 35px !important;
+
+      @media (max-width: $notebook) {
+        width: 25px !important;
+        height: 25px !important;
+      }
+    }
+    &-icon-whatsapp {
+      width: 35px !important;
+      height: 35px !important;
+
+      @media (max-width: $notebook) {
+        width: 25px !important;
+        height: 25px !important;
+      }
+    }
   }
-
-  // .header__contacts-adress
 
   &__contacts-adress {
-    @include adaptiveValue("font-size", 18, 16, 1400, 992, 1);
     line-height: math.div(20, 18);
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
 
-    &:hover {
-      & .header__contacts-icon-location {
-        fill: $mainColorOrange;
-        transition: all 0.3s;
-      }
+    @media (max-width: $notebook) {
+      order: -1;
     }
-    // white-space: nowrap;
-
-    //  &::before {
-    //    content: "";
-    //    background-image: url("@img/location.svg");
-    //    background-size: 100%;
-    //    background-repeat: no-repeat;
-    // 	width: 19px;
-    // 	height: 23px;
-    //    position: relative;
-    //  }
-  }
-
-  // .header__button
-
-  &__button {
-    @media (max-width: $mobile) {
-      display: none;
-    }
-
-    @media (max-width: $notebook) and (min-width: $tablet) {
-      display: none;
-    }
-  }
-}
-.logo {
-}
-.haeder {
-  // .haeder__list
-
-  &__list {
   }
 }
 
@@ -194,7 +168,7 @@
   display: none;
 }
 //Burger menu
-@media (max-width: $tablet) {
+@media (max-width: $notebook) {
   .burger-menu {
     display: block;
     position: relative;
@@ -213,7 +187,7 @@
 
     //burger-menu__icon-line
     &__icon-line {
-      background-color: #fff;
+      background-color: $mainColorFonts;
       border-radius: 2px;
       width: 100%;
       height: 2px;
@@ -260,7 +234,7 @@
       opacity: 0;
       display: flex;
       align-items: center;
-      color: #fff;
+      color: $mainColorFonts;
       padding: 10px;
       border-radius: 4px;
       cursor: pointer;

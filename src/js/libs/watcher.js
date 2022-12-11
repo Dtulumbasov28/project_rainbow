@@ -31,7 +31,7 @@ class ScrollWatcher {
 	// Конструктор наблюдателей
 	scrollWatcherConstructor(items) {
 		if (items.length) {
-			this.scrollWatcherLogging(`Проснулся, слежу за объектами (${items.length})...`);
+			// this.scrollWatcherLogging(`Проснулся, слежу за объектами (${items.length})...`);
 			// Уникализируем параметры
 			let uniqParams = uniqArray(Array.from(items).map(function (item) {
 				return `${item.dataset.watchRoot ? item.dataset.watchRoot : null}|${item.dataset.watchMargin ? item.dataset.watchMargin : '0px'}|${item.dataset.watchThreshold ? item.dataset.watchThreshold : 0}`;
@@ -118,18 +118,18 @@ class ScrollWatcher {
 			// Видим объект
 			// Добавляем класс
 			!targetElement.classList.contains('_watcher-view') ? targetElement.classList.add('_watcher-view') : null;
-			this.scrollWatcherLogging(`Я вижу ${targetElement.classList}, добавил класс _watcher-view`);
+			// this.scrollWatcherLogging(`Я вижу ${targetElement.classList}, добавил класс _watcher-view`);
 		} else {
 			// Не видим объект
 			// Убираем класс
 			targetElement.classList.contains('_watcher-view') ? targetElement.classList.remove('_watcher-view') : null;
-			this.scrollWatcherLogging(`Я не вижу ${targetElement.classList}, убрал класс _watcher-view`);
+			// this.scrollWatcherLogging(`Я не вижу ${targetElement.classList}, убрал класс _watcher-view`);
 		}
 	}
 	// Функция отключения слежения за объектом
 	scrollWatcherOff(targetElement, observer) {
 		observer.unobserve(targetElement);
-		this.scrollWatcherLogging(`Я перестал следить за ${targetElement.classList}`);
+		// this.scrollWatcherLogging(`Я перестал следить за ${targetElement.classList}`);
 	}
 	// Функция вывода в консоль
 	scrollWatcherLogging(message) {

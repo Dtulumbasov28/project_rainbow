@@ -19,7 +19,7 @@ $fontFamily: "Montserrat";
 $fontSize: rem(18); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
-$mainColor: #52503B; // Цвет  по умолчанию
+$mainColor: #faf8f0; // Цвет  по умолчанию
 $mainColorOrange: #e08631; // Цвет  по умолчанию #2
 $mainColorFonts: #333333; // Цвет шрифта по умолчанию
 
@@ -146,3 +146,5 @@ body {
 @import "section/services";
 @import "section/ticket";
 @import "section/gallery";
+@import "section/partners";
+@import "section/map";

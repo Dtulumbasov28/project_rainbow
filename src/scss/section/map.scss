@@ -1,0 +1,132 @@
+.map {
+  // .map__container
+
+  &__container {
+  }
+
+  // .map__title
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  // .map__content
+
+  &__content {
+    display: flex;
+  }
+
+  // .map__body
+
+  &__body {
+    width: 100%;
+    height: 600px;
+  }
+
+  // .map__contacts
+
+  &__contacts {
+  }
+
+  // .map__button
+
+  &__button {
+  }
+}
+.title {
+}
+.map-contacts {
+  background-color: $mainColorFonts;
+  color: $mainColor;
+  width: 50%;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 40px;
+  // .map-contacts__elem
+
+  &__elem {
+  }
+
+  // .map-contacts__elem-title
+
+  &__elem-title {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-bottom: 18px;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $mainColor;
+      opacity: 0.5;
+    }
+  }
+
+  // .map-contacts__elem-desc
+
+  &__elem-desc {
+    font-size: 22px;
+    line-height: math.div(28, 22);
+
+    transition: all 0.3s;
+
+    &:hover {
+      color: $mainColorOrange;
+      transition: all 0.3s;
+    }
+  }
+
+  // .map-contacts__elem-desc-transportation
+
+  &__elem-desc-transportation {
+    &:hover {
+      color: $mainColor;
+    }
+  }
+
+  // .map-contacts__elem-messengers
+
+  &__elem-messengers {
+    display: flex;
+    column-gap: 20px;
+    & svg {
+      fill: $mainColor;
+      width: 35px;
+      height: 35px;
+      transition: all 0.3s;
+
+      &:hover {
+        fill: $mainColorOrange;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  // .map-contacts__elem-inst
+
+  &__elem-inst {
+    & svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  // .map-contacts__elem-vk
+
+  &__elem-vk {
+  }
+
+  // .map-contacts__elem-whatsapp
+
+  &__elem-whatsapp {
+  }
+}
+.button {
+}

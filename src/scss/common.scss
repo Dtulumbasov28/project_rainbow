@@ -1,10 +1,13 @@
 // Заголовки, общие БЄМ блоки и проче...
+section {
+  background-color: #faf8f0;
+}
 .title {
   font-size: 40px;
   font-weight: 600;
 }
 .button {
-  color: $mainColor;
+  color: $mainColorFonts;
   position: relative;
   display: inline-block;
   width: auto;
@@ -22,15 +25,15 @@
     padding: 12px 10px;
     transition: 0.3s;
 
-    color: $mainColor;
-    border: 1px solid #fff;
+    color: $mainColorFonts;
+    border: 1px solid $mainColor;
     border-radius: 6px;
-    transition: 0.2s 0.1s;
+    transition: 0.2s;
 
     &:hover {
-      color: #fff;
-      transition: 0.2s 0.1s;
-      border-color: #fff;
+      color: $mainColor;
+      transition: 0.2s;
+      border-color: $mainColor;
     }
   }
 
@@ -45,7 +48,7 @@
     }
   }
   &::before {
-    background-color: #fff;
+    background-color: $mainColor;
     border-radius: 6px;
     transition: 0.3s ease-out;
 
@@ -57,7 +60,7 @@
     opacity: 1;
   }
 
-  &_background_brown {
+  &_background_blue {
     & span {
       color: #faf8f0;
 
@@ -71,7 +74,6 @@
     }
   }
 }
-
 // Стили для галереи lightGallery
 .lg-backdrop.in {
   opacity: 0.5 !important;
@@ -86,7 +88,7 @@
   z-index: 10;
 }
 .swiper-pagination-progressbar {
-  background: #fff;
+  background: $mainColor;
   position: absolute;
 }
 .swiper-horizontal > .swiper-pagination-progressbar,
@@ -111,7 +113,6 @@
   column-gap: 10px;
 
   &-rooms {
-    justify-content: flex-end;
   }
   &-services {
     width: 100%;
@@ -126,13 +127,13 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 2px solid $mainColor;
+  border: 2px solid $mainColorFonts;
   column-gap: 10px;
 
   & svg {
     width: 35px;
     height: 35px;
-    fill: $mainColor;
+    fill: $mainColorFonts;
     transition: all 0.2s;
   }
 
@@ -156,10 +157,10 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  border: 1px solid $mainColor;
+  border: 1px solid $mainColorFonts;
 
   &-active {
-    background-color: $mainColor;
+    background-color: $mainColorFonts;
     transition: all 0.3s;
   }
 }
@@ -177,8 +178,8 @@
   &__control--overlaid {
     width: 100px !important;
     height: 100px !important;
-    background-color: #fff !important;
-    border: 1px solid #fff;
+    background-color: $mainColor !important;
+    border: 1px solid $mainColor;
     & svg {
       fill: $mainColorOrange;
       margin-left: auto;
@@ -201,5 +202,274 @@
 
   &__menu {
     display: none;
+  }
+}
+
+// Наблюдатель за появлением элементов _watcher-view
+
+@keyframes appearanceY {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes appearanceX {
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+// main
+
+.main__title {
+  transform: translateY(80%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceY 0.6s 0.2s forwards;
+  }
+}
+
+.main__text {
+  transform: translateY(200%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceY 0.6s 0.2s forwards;
+  }
+}
+
+.main__button {
+  transform: translateY(80%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceY 0.6s 0.2s forwards;
+  }
+}
+
+// about
+
+.about__block-video {
+  transform: translateX(-50%);
+  opacity: 0;
+  &._watcher-view {
+    animation: appearanceX 0.6s 0.2s forwards;
+  }
+}
+
+.about__title {
+  transform: translateX(50%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceX 0.6s 0.2s forwards;
+  }
+}
+
+.about__text {
+  transform: translateX(50%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceX 0.6s 0.2s forwards;
+  }
+}
+
+.about__button {
+  transform: translateX(50%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceX 0.6s 0.2s forwards;
+  }
+}
+
+// benefits
+.benefits__title {
+  transform: translateY(120%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceY 0.6s 0.2s forwards;
+  }
+}
+
+.benefits__text {
+  transform: translateY(120%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceY 0.6s 0.2s forwards;
+  }
+}
+
+.benefits__cards {
+  & .benefits__card {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+
+  &._watcher-view {
+    & .benefits__card {
+      animation: appearanceY 0.6s 0.2s forwards;
+
+      &:nth-child(1) {
+        animation-delay: 0.2s;
+      }
+      &:nth-child(2) {
+        animation-delay: 0.3s;
+      }
+      &:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+      &:nth-child(4) {
+        animation-delay: 0.5s;
+      }
+    }
+  }
+}
+
+//room
+.rooms__title {
+  transform: translateY(120%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceY 0.6s 0.2s forwards;
+  }
+}
+
+.room__img-slider {
+  transform: translateY(20%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceY 0.6s 0.2s forwards;
+  }
+}
+
+.room__text {
+  transform: translateX(-100%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceX 0.6s 0.2s forwards;
+  }
+}
+
+.room__icons {
+  & .room__icons-item {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+
+  &._watcher-view {
+    & .room__icons-item {
+      animation: appearanceX 0.6s 0.2s forwards;
+
+      &:nth-child(1) {
+        animation-delay: 0.2s;
+      }
+      &:nth-child(2) {
+        animation-delay: 0.3s;
+      }
+      &:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+    }
+  }
+}
+
+// gallery
+.gallery__title {
+  transform: translateY(100%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceY 0.6s 0.2s forwards;
+  }
+}
+
+.gallery__body {
+  transform: translateY(20%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceY 0.6s 0.2s forwards;
+  }
+}
+
+//partners
+.partners__title {
+  transform: translateY(100%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceY 0.6s 0.2s forwards;
+  }
+}
+
+.partners__one .partners-block__photo {
+  transform: translateX(-100%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceX 0.6s 0.2s forwards;
+  }
+}
+
+.partners__one .partners-block__text {
+  transform: translateX(100%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceX 0.6s 0.2s forwards;
+  }
+}
+
+.partners__two .partners-block__photo {
+  transform: translateX(100%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceX 0.6s 0.2s forwards;
+  }
+}
+
+.partners__two .partners-block__text {
+  transform: translateX(-100%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceX 0.6s 0.2s forwards;
+  }
+}
+
+// map
+.map__title {
+  transform: translateY(100%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceY 0.6s 0.2s forwards;
+  }
+}
+
+.map-contacts {
+  transform: translateX(-100%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceX 0.6s 0.2s forwards;
+  }
+}
+.map__body {
+  transform: translateX(100%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceX 0.6s 0.2s forwards;
   }
 }
