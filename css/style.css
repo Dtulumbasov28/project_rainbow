@@ -339,46 +339,6 @@ section {
   transition: all 0.3s;
 }
 
-.plyr__poster {
-  background-size: cover;
-}
-
-.plyr__control:hover {
-  background-color: #e08631 !important;
-}
-
-.plyr__control--overlaid {
-  width: 100px !important;
-  height: 100px !important;
-  background-color: #faf8f0 !important;
-  border: 1px solid #faf8f0;
-}
-
-.plyr__control--overlaid svg {
-  fill: #e08631;
-  margin-left: auto;
-  margin-right: auto;
-  left: 2px;
-  width: 40px;
-  height: 40px;
-}
-
-.plyr__control--overlaid:hover {
-  background-color: transparent !important;
-}
-
-.plyr__control--overlaid:hover svg {
-  fill: #e08631;
-}
-
-.plyr--full-ui input[type=range] {
-  color: #e08631 !important;
-}
-
-.plyr__menu {
-  display: none;
-}
-
 @-webkit-keyframes appearanceY {
   100% {
     -webkit-transform: translateY(0);
@@ -1226,6 +1186,17 @@ section {
   margin-bottom: 14px;
 }
 
+.room__img {
+  max-height: 500px;
+}
+
+.room__img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .room__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1442,6 +1413,10 @@ section {
   padding-bottom: 60px;
 }
 
+.gallery__container {
+  text-align: center;
+}
+
 .gallery__title {
   text-align: center;
   margin-bottom: 40px;
@@ -1480,6 +1455,24 @@ section {
   transition: all 0.3;
 }
 
+.gallery__button {
+  position: absolute;
+  right: 0;
+}
+
+.gallery__button::before {
+  display: none;
+}
+
+.gallery__button span {
+  border-color: #333333;
+}
+
+.gallery__button span:hover {
+  border-color: #333333;
+  background-color: #333333;
+}
+
 .partners {
   padding-top: 30px;
   padding-bottom: 60px;
@@ -1512,7 +1505,10 @@ section {
 }
 
 .partners-block__photo-slide img {
-  max-height: 460px;
+  height: 460px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .partners-block__text-title {
@@ -1592,7 +1588,7 @@ section {
      -moz-column-gap: 12px;
           column-gap: 12px;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 32px;
   margin-bottom: 18px;
 }
 
@@ -1605,7 +1601,7 @@ section {
 }
 
 .map-contacts__elem-desc {
-  font-size: 22px;
+  font-size: 28px;
   line-height: 1.2727272727;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;

@@ -6,9 +6,9 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221211163330">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221217181951">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css?_v=20221211163330" />
+	<!-- <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css?_v=20221217181951" /> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -122,7 +122,6 @@
 				<div class="main__slider swiper">
 					<div class="main__slider-pagination swiper-pagination"></div>
 					<div class="main__slider-wrapper swiper-wrapper">
-						<div class="main__slider-slide swiper-slide"><picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.JPG" alt=""></picture></div>
 						<div class="main__slider-slide swiper-slide"><picture><source srcset="img/main__slide-3.webp" type="image/webp"><img src="img/main__slide-3.jpg" alt=""></picture></div>
 						<div class="main__slider-slide swiper-slide"><picture><source srcset="img/main__slide-2.webp" type="image/webp"><img src="img/main__slide-2.jpg" alt=""></picture></div>
 						<div class="main__slider-slide swiper-slide"><picture><source srcset="img/main__slide-3.webp" type="image/webp"><img src="img/main__slide-3.jpg" alt=""></picture></div>
@@ -141,11 +140,6 @@
 						<button data-watch data-watch-once class="main__button button">
 							<span>Забронировать</span>
 						</button>
-						<div id="weather">
-							<div id="description"></div>
-							<div id="temp"></div>
-							<!-- <div id="location"></div> -->
-						</div>
 					</div>
 				</div>
 			</section>
@@ -528,32 +522,76 @@
 			<section class="gallery">
 				<div class="gallery__container">
 					<h2 data-watch data-watch-once class="gallery__title title">Наш гостевой дом</h2>
-					<div data-watch data-watch-once data-gallery class="gallery__body">
-						<a href="img/main__slide-1.jpg" class="gallery__image">
-							<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt="Превью" class="gallery__preview"></picture>
-						</a>
-						<a href="img/main__slide-1.jpg" class="gallery__image">
-							<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt="Превью" class="gallery__preview"></picture>
-						</a>
-						<a href="img/main__slide-1.jpg" class="gallery__image">
-							<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt="Превью" class="gallery__preview"></picture>
-						</a>
-						<a href="img/main__slide-1.jpg" class="gallery__image">
-							<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt="Превью" class="gallery__preview"></picture>
-						</a>
-						<a href="img/main__slide-1.jpg" class="gallery__image">
-							<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt="Превью" class="gallery__preview"></picture>
-						</a>
-						<a href="img/main__slide-1.jpg" class="gallery__image">
-							<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt="Превью" class="gallery__preview"></picture>
-						</a>
-						<a href="img/main__slide-1.jpg" class="gallery__image">
-							<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt="Превью" class="gallery__preview"></picture>
-						</a>
-						<a href="img/main__slide-1.jpg" class="gallery__image">
-							<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt="Превью" class="gallery__preview"></picture>
-						</a>
-					</div>
+					<!-- <div data-watch data-watch-once data-gallery class="gallery__body">
+			<a href="img/main__slide-1.jpg" class="gallery__image">
+				<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt="Превью" class="gallery__preview"></picture>
+			</a>
+			<a href="img/main__slide-1.jpg" class="gallery__image">
+				<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt="Превью" class="gallery__preview"></picture>
+			</a>
+			<a href="img/main__slide-1.jpg" class="gallery__image">
+				<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt="Превью" class="gallery__preview"></picture>
+			</a>
+			<a href="img/main__slide-1.jpg" class="gallery__image">
+				<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt="Превью" class="gallery__preview"></picture>
+			</a>
+			<a href="img/main__slide-1.jpg" class="gallery__image">
+				<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt="Превью" class="gallery__preview"></picture>
+			</a>
+			<a href="img/main__slide-1.jpg" class="gallery__image">
+				<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt="Превью" class="gallery__preview"></picture>
+			</a>
+			<a href="img/main__slide-1.jpg" class="gallery__image">
+				<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt="Превью" class="gallery__preview"></picture>
+			</a>
+			<a href="img/main__slide-1.jpg" class="gallery__image">
+				<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt="Превью" class="gallery__preview"></picture>
+			</a>
+		</div> -->
+					<style>
+						.instawall-root43269 {
+							position: relative;
+							min-height: 80px;
+							margin: 0 auto
+						}
+					</style>
+					<script>
+						window['instawall43269'] = {
+							"token": "nfHBZe7dRoV85r9QhWSPsgdllalIHC0rWu/8n/OzDnd/+cUmtPaOOfiGShlZgOETcbXiygdOypm22SHhoDUtrqbAmqtnKN2KrwrmXWr0XFCPWABvBNmk",
+							"root_tagid": "instawall-root43269",
+							"card_padding": "5",
+							"card_count": "4",
+							"layout_max_width": "1370",
+							"count_post": "12",
+							"header_text_size": "20",
+							"header_text_color": "#212121",
+							"header_logo_size": "50",
+							"header_button_text": "Подписаться",
+							"header_button_text_size": "20",
+							"header_button_text_color": "#ffffff",
+							"header_button_background_color": "#e08631",
+							"hide_groupname": "1",
+							"hide_text": "0",
+							"hide_shadow": "0",
+							"show_header": "1",
+							"show_header_logo": "1",
+							"show_header_button": "0"
+						};
+					</script>
+					<div id="instawall-root43269" class="instawall instawall-root43269"></div>
+					<script>
+						(function(d, s, id) {
+							var js, dfjs = d.getElementsByTagName(s)[0];
+							if (d.getElementById(id)) {
+								return;
+							}
+							js = d.createElement(s);
+							js.id = id;
+							js.setAttribute("data-scriptid", "43269");
+							js.src = "https://socactive.com/widgets/instawall/i.js?id=43269&r=" + Math.random();
+							dfjs.parentNode.insertBefore(js, dfjs);
+						}(document, "script", "instawall-export43269"));
+					</script>
 				</div>
 			</section>
 			<section class="partners">
@@ -576,13 +614,22 @@
 								</div>
 								<div class="partners-block__photo-wrapper swiper-wrapper">
 									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt=""></picture>
+										<picture><source srcset="img/samotlor/samotlor-1.webp" type="image/webp"><img src="img/samotlor/samotlor-1.jpg" alt=""></picture>
 									</div>
 									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt=""></picture>
+										<picture><source srcset="img/samotlor/samotlor-2.webp" type="image/webp"><img src="img/samotlor/samotlor-2.JPG" alt=""></picture>
 									</div>
 									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt=""></picture>
+										<picture><source srcset="img/samotlor/samotlor-3.webp" type="image/webp"><img src="img/samotlor/samotlor-3.jpg" alt=""></picture>
+									</div>
+									<div class="partners-block__photo-slide swiper-slide">
+										<picture><source srcset="img/samotlor/samotlor-4.webp" type="image/webp"><img src="img/samotlor/samotlor-4.jpg" alt=""></picture>
+									</div>
+									<div class="partners-block__photo-slide swiper-slide">
+										<picture><source srcset="img/samotlor/samotlor-5.webp" type="image/webp"><img src="img/samotlor/samotlor-5.jpg" alt=""></picture>
+									</div>
+									<div class="partners-block__photo-slide swiper-slide">
+										<picture><source srcset="img/samotlor/samotlor-6.webp" type="image/webp"><img src="img/samotlor/samotlor-6.jpg" alt=""></picture>
 									</div>
 								</div>
 							</div>
@@ -629,29 +676,37 @@
 								</div>
 								<div class="partners-block__photo-wrapper swiper-wrapper">
 									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/main__slide-2.webp" type="image/webp"><img src="img/main__slide-2.jpg" alt=""></picture>
+										<picture><source srcset="img/sibiryak/sibiryak-1.webp" type="image/webp"><img src="img/sibiryak/sibiryak-1.JPG" alt=""></picture>
 									</div>
 									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt=""></picture>
+										<picture><source srcset="img/sibiryak/sibiryak-2.webp" type="image/webp"><img src="img/sibiryak/sibiryak-2.JPG" alt=""></picture>
 									</div>
 									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/main__slide-1.webp" type="image/webp"><img src="img/main__slide-1.jpg" alt=""></picture>
+										<picture><source srcset="img/sibiryak/sibiryak-3.webp" type="image/webp"><img src="img/sibiryak/sibiryak-3.jpg" alt=""></picture>
+									</div>
+									<div class="partners-block__photo-slide swiper-slide">
+										<picture><source srcset="img/sibiryak/sibiryak-4.webp" type="image/webp"><img src="img/sibiryak/sibiryak-4.jpg" alt=""></picture>
+									</div>
+									<div class="partners-block__photo-slide swiper-slide">
+										<picture><source srcset="img/sibiryak/sibiryak-5.webp" type="image/webp"><img src="img/sibiryak/sibiryak-5.JPG" alt=""></picture>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</section>
 			<section class="map">
 				<div class="map__container">
 					<h2 data-watch data-watch-once class="map__title title">Контакты</h2>
+					<div data-watch class="map__body" id="map__body"></div>
 
 					<div class="map__content">
 						<div data-watch data-watch-once class="map__contacts map-contacts">
 							<div class="map-contacts__elem">
 								<div class="map-contacts__elem-title">Адрес</div>
-								<a href="https://yandex.ru/maps/239/sochi/house/partizanskaya_ulitsa_17a/Z0AYdQVpQUQCQFppfXVwdHxlYA==/?ll=39.331090%2C43.915015&z=17" target="_blank" class="map-contacts__elem-desc">Лазаревское,
+								<a href="https://yandex.ru/maps/org/raduga/1309416016/?ll=39.328646%2C43.913508&z=16" target="_blank" class="map-contacts__elem-desc">Лазаревское,
 									Партизанская 17 А</a>
 							</div>
 							<div class="map-contacts__elem">
@@ -697,7 +752,8 @@
 								</button>
 							</div>
 						</div>
-						<div data-watch class="map__body" id="map__body"></div>
+						<div style="width:50%;overflow:hidden;position:relative;"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/1309416016?comments"></iframe><a href="https://yandex.ru/maps/org/raduga/1309416016/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Радуга
+								на карте Сочи — Яндекс Карты</a></div>
 					</div>
 				</div>
 			</section>
@@ -763,8 +819,8 @@
 		</div>
 	</div>
 </div> -->
-	<!-- <script src="https://cdn.plyr.io/3.7.2/plyr.js?_v=20221211163330"></script> -->
-	<script src="js/app.min.js?_v=20221211163330"></script>
+	<!-- <script src="https://cdn.plyr.io/3.7.2/plyr.js?_v=20221217181951"></script> -->
+	<script src="js/app.min.js?_v=20221217181951"></script>
 
 </body>
 
