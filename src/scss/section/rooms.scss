@@ -58,6 +58,12 @@
   // .room__img
 
   &__img {
+    max-height: 500px;
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   // .room__block
@@ -95,7 +101,7 @@
 
   &__desc {
     line-height: math.div(22, 16);
-	 margin-bottom: 16px;
+    margin-bottom: 16px;
   }
 
   // .room__button

@@ -166,44 +166,44 @@ section {
 }
 // Стили для плеера Plyr
 
-.plyr {
-  &__poster {
-    background-size: cover;
-  }
-  &__control {
-    &:hover {
-      background-color: $mainColorOrange !important;
-    }
-  }
-  &__control--overlaid {
-    width: 100px !important;
-    height: 100px !important;
-    background-color: $mainColor !important;
-    border: 1px solid $mainColor;
-    & svg {
-      fill: $mainColorOrange;
-      margin-left: auto;
-      margin-right: auto;
-      left: 2px;
-      width: 40px;
-      height: 40px;
-    }
-    &:hover {
-      background-color: transparent !important;
-      & svg {
-        fill: $mainColorOrange;
-      }
-    }
-  }
+// .plyr {
+//   &__poster {
+//     background-size: cover;
+//   }
+//   &__control {
+//     &:hover {
+//       background-color: $mainColorOrange !important;
+//     }
+//   }
+//   &__control--overlaid {
+//     width: 100px !important;
+//     height: 100px !important;
+//     background-color: $mainColor !important;
+//     border: 1px solid $mainColor;
+//     & svg {
+//       fill: $mainColorOrange;
+//       margin-left: auto;
+//       margin-right: auto;
+//       left: 2px;
+//       width: 40px;
+//       height: 40px;
+//     }
+//     &:hover {
+//       background-color: transparent !important;
+//       & svg {
+//         fill: $mainColorOrange;
+//       }
+//     }
+//   }
 
-  &--full-ui input[type="range"] {
-    color: $mainColorOrange !important;
-  }
+//   &--full-ui input[type="range"] {
+//     color: $mainColorOrange !important;
+//   }
 
-  &__menu {
-    display: none;
-  }
-}
+//   &__menu {
+//     display: none;
+//   }
+// }
 
 // Наблюдатель за появлением элементов _watcher-view
 
@@ -473,3 +473,5 @@ section {
     animation: appearanceX 0.6s 0.2s forwards;
   }
 }
+
+// Виджет Инстаграм

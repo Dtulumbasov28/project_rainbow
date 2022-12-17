@@ -5,6 +5,7 @@
   // .gallery__container
 
   &__container {
+    text-align: center;
   }
 
   // .gallery__title
@@ -39,8 +40,25 @@
 
     &:hover {
       transform: scale(1.1);
-		filter: blur(1px);
+      filter: blur(1px);
       transition: all 0.3;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+
+    &::before {
+      display: none;
+    }
+    & span {
+      border-color: $mainColorFonts;
+
+      &:hover {
+        border-color: $mainColorFonts;
+        background-color: $mainColorFonts;
+      }
     }
   }
 }
