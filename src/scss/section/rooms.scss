@@ -46,13 +46,13 @@
 
   &__img-slider {
     position: relative;
-    margin-bottom: 50px;
+    width: 70%;
   }
 
   // .room__img-wrapper
 
   &__img-wrapper {
-    margin-bottom: 14px;
+    height: auto !important;
   }
 
   // .room__img
@@ -66,16 +66,20 @@
     }
   }
 
-  // .room__block
-  &__block {
+  // .room__block-top
+  &__block-top {
     display: flex;
-    column-gap: 60px;
+    column-gap: 20px;
+  }
+
+  // .room__block-bottom
+  &__block-bottom {
   }
 
   // .room__text
 
   &__text {
-    width: 56%;
+    margin-top: 30px;
   }
 
   // .room__title
@@ -120,9 +124,10 @@
   // .room__icons
 
   &__icons {
-    width: 44%;
+    width: 30%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     row-gap: 20px;
   }
 
@@ -157,7 +162,9 @@
     display: flex;
     column-gap: 10px;
     position: unset;
+    bottom: 0;
     justify-content: center;
+    margin-top: 10px;
   }
 }
 .swiper-button-prev {
@@ -166,7 +173,7 @@
   left: 0;
   border: unset;
   border-radius: unset;
-  height: calc(100% - 30px);
+  height: 100%;
   background-color: $mainColor;
   opacity: 0.7;
   transition: all 0.3s;
@@ -186,7 +193,7 @@
   right: 0;
   border: unset;
   border-radius: unset;
-  height: calc(100% - 30px);
+  height: 100%;
   background-color: $mainColor;
   opacity: 0.7;
   transition: all 0.3s;

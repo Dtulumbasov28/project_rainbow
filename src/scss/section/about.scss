@@ -38,7 +38,9 @@
 
   &__video-player {
     width: 718px;
-	 position: relative;
+    height: 450px;
+    position: relative;
+    object-fit: cover;
   }
 
   // .about__block-text
