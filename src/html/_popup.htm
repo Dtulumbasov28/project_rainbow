@@ -1,10 +1,29 @@
-<!-- <div id="popup" aria-hidden="true" class="popup">
+<div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
-			</div>
+			<button data-close type="button" class="popup__close"></button>
+			<div class="popup__title title">Заказать звонок</div>
+
+			<form data-ajax data-dev action="#" class="popup__form popup-form">
+				<div class="popup-form__input-group">
+					<input required="" type="text" name="name" autocomplete="off"
+						onkeyup="this.value = this.value.replace(/[a-z0-9+= ]/gi,'');" class="popup-form__input">
+					<label class="popup-form__label">Имя</label>
+				</div>
+				<div class="popup-form__input-group">
+					<input required="" type="tel" name="tel" autocomplete="off" class="popup-form__input input-tel">
+					<label class="popup-form__label">Номер</label>
+				</div>
+				<div class="popup-form__input-group checkbox-group">
+					<input type="checkbox" id="popup-form__input-checkbox" checked>
+					<label for="popup-form__input-checkbox">Политика конфиденциальности</label>
+				</div>
+				<input type="submit" value="Отправить" class="popup-form__button">
+				<!-- <div class="popup-form__input-group">
+					<input data-datepicker type="text" name="" readonly class="popup-form__input">
+					<label class="popup-form__label">Дата заезда</label>
+				</div> -->
+			</form>
 		</div>
 	</div>
-</div> -->
+</div>

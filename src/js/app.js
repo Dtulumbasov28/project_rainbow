@@ -60,7 +60,7 @@ flsFunctions.spollers();
 Документация: https://template.fls.guru/template-docs/funkcional-popup.html
 Сниппет (HTML): pl
 */
-// import './libs/popup.js'
+import './libs/popup.js'
 
 /*
 Модуль параллакса мышью
@@ -84,6 +84,9 @@ import * as flsForms from "./files/forms/forms.js";
 
 /* Модуль формы "колличество" */
 // flsForms.formQuantity();
+
+/* Модуль работы с календарем */
+// import './files/forms/datepicker.js'
 
 /* Модуль звездного рейтинга */
 // flsForms.formRating();

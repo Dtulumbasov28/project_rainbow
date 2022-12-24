@@ -1,5 +1,7 @@
 .main {
   position: relative;
+  padding-top: unset;
+  padding-bottom: unset;
 
   // .main__slider
 
@@ -60,10 +62,10 @@
   // .main__title
 
   &__title {
-    font-size: 62px;
+    @include adaptiveValue("font-size", 62, 24, 1240, 479, 1);
     font-weight: 600;
     margin-bottom: 40px;
-    line-height: math.div(58, 48);
+    line-height: 1;
   }
 
   // .main__text
@@ -71,6 +73,10 @@
   &__text {
     text-transform: uppercase;
     margin-bottom: 60px;
+
+    @media (max-width: $mobileSmall) {
+      font-size: 14px;
+    }
   }
 
   // .main__button

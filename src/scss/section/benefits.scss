@@ -1,7 +1,4 @@
 .benefits {
-  padding-top: 80px;
-  padding-bottom: 80px;
-
   // .benefits__container
 
   &__container {
@@ -27,6 +24,14 @@
   &__text {
     width: 80%;
     font-size: 20px;
+
+    @media (max-width: $mobile) {
+      font-size: 18px;
+      width: 100%;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 16px;
+    }
   }
 
   // .benefits__cards
@@ -35,6 +40,11 @@
     display: flex;
     column-gap: 30px;
     margin-top: 50px;
+
+    @media (max-width: $notebook) {
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
   }
 
   // .benefits__card
@@ -43,6 +53,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: $notebook) {
+      width: 47%;
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
 
     //  border: 1px solid $mainColor;
     //  border-radius: 10px;
@@ -70,6 +88,10 @@
 
   &__card-text {
     line-height: math.div(20, 16);
+
+    @media (max-width: $mobile) {
+      font-size: 16px;
+    }
   }
 }
 .title {
