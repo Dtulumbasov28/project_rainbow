@@ -3,6 +3,15 @@
   background-color: $mainColorFonts;
   padding: 30px 0px;
   // .footer__container
+  position: relative;
+  &::before {
+    content: "*Instagram — проект Meta Platforms Inc., деятельность которой в России запрещена";
+    position: absolute;
+    font-size: 12px;
+    color: #fff;
+    bottom: 6px;
+    left: 0.9375rem;
+  }
 
   &__container {
   }
@@ -102,6 +111,7 @@
     font-weight: 200;
     text-align: center;
     margin-top: 16px;
+    margin-bottom: 10px;
 
     @media (max-width: $mobileSmall) {
       font-size: 14px;
