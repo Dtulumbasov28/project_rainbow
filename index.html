@@ -6,9 +6,9 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221220214356">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221225200442">
 	<link rel="shortcut icon" href="favicon.ico">
-	<!-- <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css?_v=20221220214356" /> -->
+	<!-- <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css?_v=20221225200442" /> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -18,72 +18,68 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__body">
-					<a class="header__logo logo" href="#">
+					<a class="header__logo logo" href="/">
 						<svg>
 							<use xlink:href="img/icons/icons.svg#svg-logo-black"></use>
 						</svg>
-						<!-- <img class="header__logo logo" src="img/logo.svg" alt="логотип"> -->
 					</a>
 					<nav data-da=".burger-menu__body,1239.98,1" class="header__menu">
 						<ul class="header__list">
 							<li class="header__item burger-menu__item">
-								<a href="#" data-goto=".header" class="header__link">
+								<button data-goto-header data-goto=".main" class="header__link">
 									Главная
-								</a>
+								</button>
 							</li>
 							<li class="header__item burger-menu__item">
-								<a href="#" data-goto=".about" class="header__link">
+								<button data-goto-header data-goto=".about" class="header__link">
 									О нас
-								</a>
+								</button>
 							</li>
-							<!-- <li class="header__item burger-menu__item">
-						<a href="#" data-goto=".benefits" class="header__link">
-							Преимущества
-						</a>
-					</li> -->
+
 							<li class="header__item burger-menu__item">
-								<a href="#" data-goto=".rooms" class="header__link">
+								<button data-goto-header data-goto=".rooms" class="header__link">
 									Номера
-								</a>
+								</button>
 							</li>
 							<li class="header__item burger-menu__item">
-								<a href="#" data-goto=".gallery" class="header__link">
+								<button data-goto-header data-goto=".gallery" class="header__link">
 									Галерея
-								</a>
+								</button>
 							</li>
 							<li class="header__item burger-menu__item">
-								<a href="#" data-goto=".gallery" class="header__link">
+								<button data-goto-header data-goto=".partners" class="header__link">
 									Партнеры
-								</a>
+								</button>
 							</li>
 							<li class="header__item burger-menu__item">
-								<a href="#" data-goto=".map" class="header__link">
+								<button data-goto-header data-goto=".map" class="header__link">
 									Контакты
-								</a>
+								</button>
 							</li>
 						</ul>
 					</nav>
 
 					<div class="header__contacts">
-						<a href="tel:+79999999999" class="header__contacts-elem header__contacts-phone">
+						<a href="tel:+79282331010" class="header__contacts-elem header__contacts-phone">
 							<svg class="header__contacts-icon-phone">
 								<use xlink:href="img/icons/icons.svg#svg-phone"></use>
 							</svg>
-							<span>8 999 999 99-99</span>
+							<span>8 928 233 10-10
+							</span>
 						</a>
-						<a href="#" class="header__contacts-elem header__contacts-messengers">
+						<a href="https://vk.com/raduganamore" target="_blank" class="header__contacts-elem header__contacts-messengers">
 							<svg class="header__contacts-icon-vk">
 								<use xlink:href="img/icons/icons.svg#svg-vk"></use>
 							</svg>
 							<span>ВКонтакте</span>
 						</a>
-						<a href="#" class="header__contacts-elem header__contacts-adress">
+						<a href="https://yandex.ru/maps/org/raduga/1309416016/?ll=39.328646%2C43.913508&amp;z=16" target="_blank" class="header__contacts-elem header__contacts-adress">
 							<svg class="header__contacts-icon-location">
 								<use xlink:href="img/icons/icons.svg#svg-location"></use>
 							</svg>
 							<span>Лазаревское, <br> Партизанская 17 А</span>
 						</a>
-						<a href="#" class="header__contacts-elem header__contacts-messengers">
+						<a href="https://wa.me/79282331010?text=Здравствуйте!%20Я%20хочу%20забронировать%20номер%20в%20гостевом%20доме%20&#171;Радуга	&#187;" target="_blank" class="header__contacts-elem header__contacts-messengers">
 							<svg class="header__contacts-icon-whatsapp">
 								<use xlink:href="img/icons/icons.svg#svg-whatsapp"></use>
 							</svg>
@@ -122,22 +118,17 @@
 				<div class="main__slider swiper">
 					<div class="main__slider-pagination swiper-pagination"></div>
 					<div class="main__slider-wrapper swiper-wrapper">
-						<div class="main__slider-slide swiper-slide"><picture><source srcset="img/main/main__slide-1.webp" type="image/webp"><img src="img/main/main__slide-1.jpg" alt=""></picture></div>
-						<div class="main__slider-slide swiper-slide"><picture><source srcset="img/main/main__slide-2.webp" type="image/webp"><img src="img/main/main__slide-2.jpg" alt=""></picture></div>
-						<div class="main__slider-slide swiper-slide"><picture><source srcset="img/main/main__slide-3.webp" type="image/webp"><img src="img/main/main__slide-3.jpg" alt=""></picture></div>
+						<div class="main__slider-slide swiper-slide"><picture><source data-srcset="img/main/main__slide-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main/main__slide-1.jpg" alt=""></picture></div>
+						<div class="main__slider-slide swiper-slide"><picture><source data-srcset="img/main/main__slide-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main/main__slide-2.jpg" alt=""></picture></div>
 					</div>
-					<button type="button" class="main__slider-button swiper-button-prev"></button>
-					<button type="button" class="main__slider-button swiper-button-next"></button>
 				</div>
-
 				<div class="main__container">
 					<div class="main__body">
-						<h1 data-watch data-watch-once class="title main__title">В своём стремлении улучшить пользовательский опыт мы
-							упускаем.</h1>
-						<div data-watch data-watch-once class="main__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Cumque aliquam atque iusto
-							exercitationem?</div>
-						<button data-watch data-watch-once class="main__button button">
+						<h1 data-watch data-watch-once class="title main__title">Цены, которые делают отдых на море
+							доступным</h1>
+						<div data-watch data-watch-once class="main__text"> Мы находимся в центре Лазаревского, в 770 метрах от моря
+						</div>
+						<button data-watch data-watch-once data-popup="#popup" class="main__button button">
 							<span>Забронировать</span>
 						</button>
 					</div>
@@ -146,29 +137,49 @@
 			<section class="about">
 				<div class="about__container">
 					<div class="about__body">
-						<div data-watch data-watch-once class="about__block-video">
-							<!-- <video class="about__video-player" controls data-poster="img/about__video-preview.jpg">
-					<source src="img/video.mp4" type="video/mp4" />
-				</video> -->
-							<picture><source srcset="img/about/about__slide-1.webp" type="image/webp"><img class="about__video-player" src="img/about/about__slide-1.JPG" alt=""></picture>
-							<!-- <video width="400" height="300" id="video-player" poster="">
-					<source src="img/video.mp4" type="video/mp4">
-				</video>
-				<div><button id="video-play">Play</button></div>
-				<div><button id="video-pause">Pause</button></div>
-				<div><button id="video-stop">Stop</button></div>
-				<div><button id="video-speed-up">Быстрее</button></div>
-				<div><button id="video-speed-down">Медленнее</button></div>
-				<div><button id="video-speed-normal">Норма</button></div>
-				<div><input type="range" id="video-volume">Звук</div> -->
+						<div data-watch data-watch-once class="about__block-img swiper">
+							<div data-gallery class="about__block-img-wrapper swiper-wrapper">
+								<!-- <video class="about__video-player" controls data-poster="img/about__video-preview.jpg">
+						<source src="img/video.mp4" type="video/mp4" />
+					</video> -->
+								<a href="img/about/about__slide-1.jpg" class="about__img-wrapper swiper-slide">
+									<picture><source data-srcset="img/about/about__slide-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="about__img" data-src="img/about/about__slide-1.jpg" alt=""></picture>
+								</a>
+								<a href="img/about/about__slide-2.jpg" class="about__img-wrapper swiper-slide">
+									<picture><source data-srcset="img/about/about__slide-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="about__img" data-src="img/about/about__slide-2.jpg" alt=""></picture>
+								</a>
+								<a href="img/about/about__slide-3.jpg" class="about__img-wrapper swiper-slide">
+									<picture><source data-srcset="img/about/about__slide-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="about__img" data-src="img/about/about__slide-3.jpg" alt=""></picture>
+								</a>
+								<a href="img/about/about__slide-4.jpg" class="about__img-wrapper swiper-slide">
+									<picture><source data-srcset="img/about/about__slide-4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="about__img" data-src="img/about/about__slide-4.jpg" alt=""></picture>
+								</a>
+								<a href="img/about/about__slide-5.jpg" class="about__img-wrapper swiper-slide">
+									<picture><source data-srcset="img/about/about__slide-5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="about__img" data-src="img/about/about__slide-5.jpg" alt=""></picture>
+								</a>
+								<!-- <video width="400" height="300" id="video-player" poster="">
+						<source src="img/video.mp4" type="video/mp4">
+					</video>
+					<div><button id="video-play">Play</button></div>
+					<div><button id="video-pause">Pause</button></div>
+					<div><button id="video-stop">Stop</button></div>
+					<div><button id="video-speed-up">Быстрее</button></div>
+					<div><button id="video-speed-down">Медленнее</button></div>
+					<div><button id="video-speed-normal">Норма</button></div>
+					<div><input type="range" id="video-volume">Звук</div> -->
+							</div>
+							<div class="about__pagination swiper-pagination"></div>
 						</div>
 						<div class="about__block-text">
 							<h2 data-watch data-watch-once class="title about__title">О нас</h2>
-							<div data-watch data-watch-once class="about__text">В своём стремлении улучшить
-								пользовательский
-								опыт мы упускаем, что независимые
-								государства и по сей день остаются уделом либералов.</div>
-							<button data-watch data-watch-once class="about__button button">
+							<div data-watch data-watch-once class="about__text">
+								<span>В пешей доступности находятся магазины, кинотеатр, кафе, столовые, скверы, парк аттракционов
+									дельфинарии и океанариумы.
+								</span>
+								<span>В гостевом доме имеется общая кухня для приготовления пищи, зона барбекю, качели, теннисный стол.
+								</span>
+							</div>
+							<button data-watch data-watch-once data-popup="#popup" class="about__button button">
 								<span>Забронировать</span>
 							</button>
 						</div>
@@ -188,39 +199,35 @@
 						<div data-watch data-watch-once class="benefits__cards">
 							<div class="benefits__card">
 								<div class="benefits__card-icon"> <svg>
-										<use xlink:href="img/icons/icons.svg#svg-benefits-kitchen"></use>
-									</svg></div>
-								<div class="benefits__card-title">В своём стремлении</div>
-								<div class="benefits__card-text">В своём стремлении улучшить пользовательский опыт мы упускаем, что
-									независимые
-									государства и по сей день остаются уделом либералов.</div>
-							</div>
-							<div class="benefits__card">
-								<div class="benefits__card-icon"> <svg>
-										<use xlink:href="img/icons/icons.svg#svg-benefits-bath"></use>
-									</svg></div>
-								<div class="benefits__card-title">В своём стремлении</div>
-								<div class="benefits__card-text">В своём стремлении улучшить пользовательский опыт мы упускаем, что
-									независимые
-									государства и по сей день остаются уделом либералов.</div>
-							</div>
-							<div class="benefits__card">
-								<div class="benefits__card-icon"> <svg>
 										<use xlink:href="img/icons/icons.svg#svg-benefits-price"></use>
 									</svg></div>
-								<div class="benefits__card-title">В своём стремлении</div>
-								<div class="benefits__card-text">В своём стремлении улучшить пользовательский опыт мы упускаем, что
-									независимые
-									государства и по сей день остаются уделом либералов.</div>
+								<div class="benefits__card-title">Доступность цен</div>
+								<div class="benefits__card-text">Мы не завышаем цены, потому к нам можно попасть даже в разгар сезона
+								</div>
+							</div>
+							<div class="benefits__card">
+								<div class="benefits__card-icon"> <svg>
+										<use xlink:href="img/icons/icons.svg#svg-benefits-kitchen"></use>
+									</svg></div>
+								<div class="benefits__card-title">Кухня</div>
+								<div class="benefits__card-text">Просторная, чистая, общая зона где можно приготовить еду или просто
+									посидеть за бокалом вина и вкусностями</div>
+							</div>
+							<div class="benefits__card">
+								<div class="benefits__card-icon benefits__card-icon-beach"> <svg>
+										<use xlink:href="img/icons/icons.svg#svg-benefits-beach"></use>
+									</svg></div>
+								<div class="benefits__card-title">Месторасположение</div>
+								<div class="benefits__card-text">Удачное расположение открывает все возможности города и одновременно
+									оберегает от городской суеты и шума, позволяя насладиться пением птиц и шелестом листьев</div>
 							</div>
 							<div class="benefits__card">
 								<div class="benefits__card-icon"> <svg>
 										<use xlink:href="img/icons/icons.svg#svg-benefits-room"></use>
 									</svg></div>
-								<div class="benefits__card-title">В своём стремлении</div>
-								<div class="benefits__card-text">В своём стремлении улучшить пользовательский опыт мы упускаем, что
-									независимые
-									государства и по сей день остаются уделом либералов.</div>
+								<div class="benefits__card-title">Комфорт</div>
+								<div class="benefits__card-text">Наши номера оснащены всем необходимым. В них просторно и уютно,
+									ортопедические матрасы, сеть wi-fi, свой балкон и ванная комната</div>
 							</div>
 						</div>
 					</div>
@@ -247,67 +254,96 @@
 											</svg>
 										</button>
 									</div>
-									<div class="room__img-wrapper swiper-wrapper">
-										<div class="room__img swiper-slide"><picture><source srcset="img/2/DSC_0161-1.webp" type="image/webp"><img src="img/2/DSC_0161-1.jpg" alt="" /></picture></div>
-										<div class="room__img swiper-slide"><picture><source srcset="img/2/DSC_0164-1.webp" type="image/webp"><img src="img/2/DSC_0164-1.jpg" alt="" /></picture></div>
-										<div class="room__img swiper-slide"><picture><source srcset="img/2/DSC_0169-1.webp" type="image/webp"><img src="img/2/DSC_0169-1.jpg" alt="" /></picture></div>
+									<div data-gallery class="room__img-wrapper swiper-wrapper">
+										<a href="img/2/DSC_0161-1.jpg" class="room__img swiper-slide"><picture><source data-srcset="img/2/DSC_0161-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/2/DSC_0161-1.jpg" alt="" /></picture></a>
+										<a href="img/2/DSC_0164-1.jpg" class="room__img swiper-slide"><picture><source data-srcset="img/2/DSC_0164-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/2/DSC_0164-1.jpg" alt="" /></picture></a>
+										<a href="img/2/DSC_0169-1.jpg" class="room__img swiper-slide"><picture><source data-srcset="img/2/DSC_0169-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/2/DSC_0169-1.jpg" alt="" /></picture></a>
 									</div>
 									<div class="room-img__slider-pagination swiper-pagination"></div>
 								</div>
 								<div data-watch data-watch-once class="room__icons">
 									<div class="room__icons-item">
 										<svg class="room__icons-item-img">
-											<use xlink:href="img/icons/icons.svg#svg-room_1"></use>
+											<use xlink:href="img/icons/icons.svg#svg-room_wifi"></use>
 										</svg>
 										<div class="room__icons-item-text">
-											А ещё сделанные на базе интернет-аналитики выводы.
+											Wi-fi
 										</div>
 									</div>
 									<div class="room__icons-item">
 										<svg class="room__icons-item-img">
-											<use xlink:href="img/icons/icons.svg#svg-room_2"></use>
+											<use xlink:href="img/icons/icons.svg#svg-room_refrigerator"></use>
 										</svg>
 										<div class="room__icons-item-text">
-											А ещё сделанные на базе интернет-аналитики выводы.
+											Холодильник
 										</div>
 									</div>
 									<div class="room__icons-item">
 										<svg class="room__icons-item-img">
-											<use xlink:href="img/icons/icons.svg#svg-room_1"></use>
+											<use xlink:href="img/icons/icons.svg#svg-room_cond"></use>
 										</svg>
 										<div class="room__icons-item-text">
-											А ещё сделанные на базе интернет-аналитики выводы.
+											Кондиционер
 										</div>
 									</div>
 									<div class="room__icons-item">
 										<svg class="room__icons-item-img">
-											<use xlink:href="img/icons/icons.svg#svg-room_2"></use>
+											<use xlink:href="img/icons/icons.svg#svg-room_tv"></use>
 										</svg>
 										<div class="room__icons-item-text">
-											А ещё сделанные на базе интернет-аналитики выводы.
+											Телевизор
 										</div>
 									</div>
 									<div class="room__icons-item">
 										<svg class="room__icons-item-img">
-											<use xlink:href="img/icons/icons.svg#svg-room_2"></use>
+											<use xlink:href="img/icons/icons.svg#svg-room_towel"></use>
 										</svg>
 										<div class="room__icons-item-text">
-											А ещё сделанные на базе интернет-аналитики выводы.
+											Полотенца
+										</div>
+									</div>
+									<div class="room__icons-item">
+										<svg class="room__icons-item-img">
+											<use xlink:href="img/icons/icons.svg#svg-room_toilet"></use>
+										</svg>
+										<div class="room__icons-item-text">
+											Туалет
+										</div>
+									</div>
+									<div class="room__icons-item">
+										<svg class="room__icons-item-img">
+											<use xlink:href="img/icons/icons.svg#svg-room_shower"></use>
+										</svg>
+										<div class="room__icons-item-text">
+											Душ
+										</div>
+									</div>
+									<div class="room__icons-item">
+										<svg class="room__icons-item-img">
+											<use xlink:href="img/icons/icons.svg#svg-room_balcony"></use>
+										</svg>
+										<div class="room__icons-item-text">
+											Балкон
+										</div>
+									</div>
+									<div class="room__icons-item">
+										<svg class="room__icons-item-img">
+											<use xlink:href="img/icons/icons.svg#svg-room_bed"></use>
+										</svg>
+										<div class="room__icons-item-text">
+											Кровать
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="room__block-bottom">
 								<div data-watch data-watch-once class="room__text">
-									<div class="room__title">1х-спальный номер</div>
+									<div class="room__title">Двухспальный номер (Smart)</div>
 									<div class="room__desc">
-										А ещё сделанные на базе интернет-аналитики выводы ограничены
-										исключительно образом мышления! Лишь действия представителей
-										оппозиции призывают нас к новым свершениям, которые, в свою
-										очередь, должны быть представлены в исключительно
-										положительном свете.
+										Отличный вариант для двоих человек. Достаточно просторная комната с двуспальной кроватью включает в
+										себя ванную комнату с душем и туалетом. Есть свой балкончик. В номер выдаются полотенца.
 									</div>
-									<button class="room__button button">
+									<button data-popup="#popup" class="room__button button">
 										<span>Забронировать</span>
 									</button>
 								</div>
@@ -328,66 +364,95 @@
 											</svg>
 										</button>
 									</div>
-									<div class="room__img-wrapper swiper-wrapper">
-										<div class="room__img swiper-slide"><picture><source srcset="img/3/1DSC_0161-1.webp" type="image/webp"><img src="img/3/1DSC_0161-1.jpg" alt="" /></picture></div>
-										<div class="room__img swiper-slide"><picture><source srcset="img/3/DSC_0161-6.webp" type="image/webp"><img src="img/3/DSC_0161-6.jpg" alt="" /></picture></div>
+									<div data-gallery class="room__img-wrapper swiper-wrapper">
+										<a href="img/3/1DSC_0161-1.jpg" class="room__img swiper-slide"><picture><source data-srcset="img/3/1DSC_0161-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/3/1DSC_0161-1.jpg" alt="" /></picture></a>
+										<a href="img/3/DSC_0161-6.jpg" class="room__img swiper-slide"><picture><source data-srcset="img/3/DSC_0161-6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/3/DSC_0161-6.jpg" alt="" /></picture></a>
 									</div>
-									<div class="room-img__slider-pagination swiper-pagination"></div>
+									<!-- <div class="room-img__slider-pagination swiper-pagination"></div> -->
 								</div>
 								<div data-watch data-watch-once class="room__icons">
 									<div class="room__icons-item">
 										<svg class="room__icons-item-img">
-											<use xlink:href="img/icons/icons.svg#svg-room_1"></use>
+											<use xlink:href="img/icons/icons.svg#svg-room_wifi"></use>
 										</svg>
 										<div class="room__icons-item-text">
-											А ещё сделанные на базе интернет-аналитики выводы.
+											Wi-fi
 										</div>
 									</div>
 									<div class="room__icons-item">
 										<svg class="room__icons-item-img">
-											<use xlink:href="img/icons/icons.svg#svg-room_2"></use>
+											<use xlink:href="img/icons/icons.svg#svg-room_refrigerator"></use>
 										</svg>
 										<div class="room__icons-item-text">
-											А ещё сделанные на базе интернет-аналитики выводы.
+											Холодильник
 										</div>
 									</div>
 									<div class="room__icons-item">
 										<svg class="room__icons-item-img">
-											<use xlink:href="img/icons/icons.svg#svg-room_1"></use>
+											<use xlink:href="img/icons/icons.svg#svg-room_cond"></use>
 										</svg>
 										<div class="room__icons-item-text">
-											А ещё сделанные на базе интернет-аналитики выводы.
+											Кондиционер
 										</div>
 									</div>
 									<div class="room__icons-item">
 										<svg class="room__icons-item-img">
-											<use xlink:href="img/icons/icons.svg#svg-room_2"></use>
+											<use xlink:href="img/icons/icons.svg#svg-room_tv"></use>
 										</svg>
 										<div class="room__icons-item-text">
-											А ещё сделанные на базе интернет-аналитики выводы.
+											Телевизор
 										</div>
 									</div>
 									<div class="room__icons-item">
 										<svg class="room__icons-item-img">
-											<use xlink:href="img/icons/icons.svg#svg-room_2"></use>
+											<use xlink:href="img/icons/icons.svg#svg-room_towel"></use>
 										</svg>
 										<div class="room__icons-item-text">
-											А ещё сделанные на базе интернет-аналитики выводы.
+											Полотенца
+										</div>
+									</div>
+									<div class="room__icons-item">
+										<svg class="room__icons-item-img">
+											<use xlink:href="img/icons/icons.svg#svg-room_toilet"></use>
+										</svg>
+										<div class="room__icons-item-text">
+											Туалет
+										</div>
+									</div>
+									<div class="room__icons-item">
+										<svg class="room__icons-item-img">
+											<use xlink:href="img/icons/icons.svg#svg-room_shower"></use>
+										</svg>
+										<div class="room__icons-item-text">
+											Душ
+										</div>
+									</div>
+									<div class="room__icons-item">
+										<svg class="room__icons-item-img">
+											<use xlink:href="img/icons/icons.svg#svg-room_balcony"></use>
+										</svg>
+										<div class="room__icons-item-text">
+											Балкон
+										</div>
+									</div>
+									<div class="room__icons-item">
+										<svg class="room__icons-item-img">
+											<use xlink:href="img/icons/icons.svg#svg-room_bed"></use>
+										</svg>
+										<div class="room__icons-item-text">
+											Кровать
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="room__block-bottom">
 								<div data-watch data-watch-once class="room__text">
-									<div class="room__title">1х-спальный номер</div>
+									<div class="room__title">Трехспальный номер (Mid)</div>
 									<div class="room__desc">
-										А ещё сделанные на базе интернет-аналитики выводы ограничены
-										исключительно образом мышления! Лишь действия представителей
-										оппозиции призывают нас к новым свершениям, которые, в свою
-										очередь, должны быть представлены в исключительно
-										положительном свете.
+										Для семьи из трех человек. Также имеет все удобства в виде своей ванной комнаты и балкончика. В
+										номере одна двуспальная и одна односпальная кровати.
 									</div>
-									<button class="room__button button">
+									<button data-popup="#popup" class="room__button button">
 										<span>Забронировать</span>
 									</button>
 								</div>
@@ -408,69 +473,98 @@
 											</svg>
 										</button>
 									</div>
-									<div class="room__img-wrapper swiper-wrapper">
-										<div class="room__img swiper-slide"><picture><source srcset="img/4/DSC_0080-1.webp" type="image/webp"><img src="img/4/DSC_0080-1.jpg" alt="" /></picture></div>
-										<div class="room__img swiper-slide"><picture><source srcset="img/4/DSC_0161-113.webp" type="image/webp"><img src="img/4/DSC_0161-113.jpg" alt="" /></picture></div>
-										<div class="room__img swiper-slide"><picture><source srcset="img/4/DSC_0161-12.webp" type="image/webp"><img src="img/4/DSC_0161-12.jpg" alt="" /></picture></div>
-										<div class="room__img swiper-slide"><picture><source srcset="img/4/DSC_0214-1.webp" type="image/webp"><img src="img/4/DSC_0214-1.jpg" alt="" /></picture></div>
-										<div class="room__img swiper-slide"><picture><source srcset="img/4/DSC_0231-1.webp" type="image/webp"><img src="img/4/DSC_0231-1.jpg" alt="" /></picture></div>
+									<div data-gallery class="room__img-wrapper swiper-wrapper">
+										<a href="img/4/DSC_0080-1.jpg" class="room__img swiper-slide"><picture><source data-srcset="img/4/DSC_0080-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/4/DSC_0080-1.jpg" alt="" /></picture></a>
+										<a href="img/4/DSC_0161-113.jpg" class="room__img swiper-slide"><picture><source data-srcset="img/4/DSC_0161-113.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/4/DSC_0161-113.jpg" alt="" /></picture></a>
+										<a href="img/4/DSC_0161-12.jpg" class="room__img swiper-slide"><picture><source data-srcset="img/4/DSC_0161-12.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/4/DSC_0161-12.jpg" alt="" /></picture></a>
+										<a href="img/4/DSC_0214-1.jpg" class="room__img swiper-slide"><picture><source data-srcset="img/4/DSC_0214-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/4/DSC_0214-1.jpg" alt="" /></picture></a>
+										<a href="img/4/DSC_0231-1.jpg" class="room__img swiper-slide"><picture><source data-srcset="img/4/DSC_0231-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/4/DSC_0231-1.jpg" alt="" /></picture></a>
 									</div>
-									<div class="room-img__slider-pagination swiper-pagination"></div>
+									<!-- <div class="room-img__slider-pagination swiper-pagination"></div> -->
 								</div>
 								<div data-watch data-watch-once class="room__icons">
 									<div class="room__icons-item">
 										<svg class="room__icons-item-img">
-											<use xlink:href="img/icons/icons.svg#svg-room_1"></use>
+											<use xlink:href="img/icons/icons.svg#svg-room_wifi"></use>
 										</svg>
 										<div class="room__icons-item-text">
-											А ещё сделанные на базе интернет-аналитики выводы.
+											Wi-fi
 										</div>
 									</div>
 									<div class="room__icons-item">
 										<svg class="room__icons-item-img">
-											<use xlink:href="img/icons/icons.svg#svg-room_2"></use>
+											<use xlink:href="img/icons/icons.svg#svg-room_refrigerator"></use>
 										</svg>
 										<div class="room__icons-item-text">
-											А ещё сделанные на базе интернет-аналитики выводы.
+											Холодильник
 										</div>
 									</div>
 									<div class="room__icons-item">
 										<svg class="room__icons-item-img">
-											<use xlink:href="img/icons/icons.svg#svg-room_1"></use>
+											<use xlink:href="img/icons/icons.svg#svg-room_cond"></use>
 										</svg>
 										<div class="room__icons-item-text">
-											А ещё сделанные на базе интернет-аналитики выводы.
+											Кондиционер
 										</div>
 									</div>
 									<div class="room__icons-item">
 										<svg class="room__icons-item-img">
-											<use xlink:href="img/icons/icons.svg#svg-room_2"></use>
+											<use xlink:href="img/icons/icons.svg#svg-room_tv"></use>
 										</svg>
 										<div class="room__icons-item-text">
-											А ещё сделанные на базе интернет-аналитики выводы.
+											Телевизор
 										</div>
 									</div>
 									<div class="room__icons-item">
 										<svg class="room__icons-item-img">
-											<use xlink:href="img/icons/icons.svg#svg-room_2"></use>
+											<use xlink:href="img/icons/icons.svg#svg-room_towel"></use>
 										</svg>
 										<div class="room__icons-item-text">
-											А ещё сделанные на базе интернет-аналитики выводы.
+											Полотенца
+										</div>
+									</div>
+									<div class="room__icons-item">
+										<svg class="room__icons-item-img">
+											<use xlink:href="img/icons/icons.svg#svg-room_toilet"></use>
+										</svg>
+										<div class="room__icons-item-text">
+											Туалет
+										</div>
+									</div>
+									<div class="room__icons-item">
+										<svg class="room__icons-item-img">
+											<use xlink:href="img/icons/icons.svg#svg-room_shower"></use>
+										</svg>
+										<div class="room__icons-item-text">
+											Душ
+										</div>
+									</div>
+									<div class="room__icons-item">
+										<svg class="room__icons-item-img">
+											<use xlink:href="img/icons/icons.svg#svg-room_balcony"></use>
+										</svg>
+										<div class="room__icons-item-text">
+											Балкон
+										</div>
+									</div>
+									<div class="room__icons-item">
+										<svg class="room__icons-item-img">
+											<use xlink:href="img/icons/icons.svg#svg-room_bed"></use>
+										</svg>
+										<div class="room__icons-item-text">
+											Кровать
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="room__block-bottom">
 								<div data-watch data-watch-once class="room__text">
-									<div class="room__title">1х-спальный номер</div>
+									<div class="room__title">Четырехспальный Номер (Full)</div>
 									<div class="room__desc">
-										А ещё сделанные на базе интернет-аналитики выводы ограничены
-										исключительно образом мышления! Лишь действия представителей
-										оппозиции призывают нас к новым свершениям, которые, в свою
-										очередь, должны быть представлены в исключительно
-										положительном свете.
+										Сюда может заехать большая семья или компания. Оснащен всеми удобствами и имеет свой балкон. Здесь
+										двуспальная и односпальная кровати дополняются раскладным диваном (на двух персон)
 									</div>
-									<button class="room__button button">
+									<button data-popup="#popup" class="room__button button">
 										<span>Забронировать</span>
 									</button>
 								</div>
@@ -672,35 +766,33 @@
 										</svg>
 									</button>
 								</div>
-								<div class="partners-block__photo-wrapper swiper-wrapper">
-									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/samotlor/samotlor-1.webp" type="image/webp"><img src="img/samotlor/samotlor-1.jpg" alt=""></picture>
-									</div>
-									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/samotlor/samotlor-2.webp" type="image/webp"><img src="img/samotlor/samotlor-2.jpg" alt=""></picture>
-									</div>
-									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/samotlor/samotlor-3.webp" type="image/webp"><img src="img/samotlor/samotlor-3.jpg" alt=""></picture>
-									</div>
-									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/samotlor/samotlor-4.webp" type="image/webp"><img src="img/samotlor/samotlor-4.jpg" alt=""></picture>
-									</div>
-									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/samotlor/samotlor-5.webp" type="image/webp"><img src="img/samotlor/samotlor-5.jpg" alt=""></picture>
-									</div>
-									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/samotlor/samotlor-6.webp" type="image/webp"><img src="img/samotlor/samotlor-6.jpg" alt=""></picture>
-									</div>
+								<div data-gallery="" class="partners-block__photo-wrapper swiper-wrapper">
+									<a href="img/samotlor/samotlor-1.jpg" class="partners-block__photo-slide swiper-slide">
+										<picture><source data-srcset="img/samotlor/samotlor-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/samotlor/samotlor-1.jpg" alt=""></picture>
+									</a>
+									<a href="img/samotlor/samotlor-2.jpg" class="partners-block__photo-slide swiper-slide">
+										<picture><source data-srcset="img/samotlor/samotlor-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/samotlor/samotlor-2.jpg" alt=""></picture>
+									</a>
+									<a href="img/samotlor/samotlor-3.jpg" class="partners-block__photo-slide swiper-slide">
+										<picture><source data-srcset="img/samotlor/samotlor-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/samotlor/samotlor-3.jpg" alt=""></picture>
+									</a>
+									<a href="img/samotlor/samotlor-4.jpg" class="partners-block__photo-slide swiper-slide">
+										<picture><source data-srcset="img/samotlor/samotlor-4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/samotlor/samotlor-4.jpg" alt=""></picture>
+									</a>
+									<a href="img/samotlor/samotlor-5.jpg" class="partners-block__photo-slide swiper-slide">
+										<picture><source data-srcset="img/samotlor/samotlor-5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/samotlor/samotlor-5.jpg" alt=""></picture>
+									</a>
+									<a href="img/samotlor/samotlor-6.jpg" class="partners-block__photo-slide swiper-slide">
+										<picture><source data-srcset="img/samotlor/samotlor-6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/samotlor/samotlor-6.jpg" alt=""></picture>
+									</a>
 								</div>
 							</div>
 						</div>
 						<div data-watch data-watch-once class="partners__block-text partners-block__text">
 							<div class="partners-block__text-title">Гостевой дом "Самотлор"</div>
-							<div class="partners-block__text-desc">Разнообразный и богатый опыт укрепление и развитие структуры
-								позволяет оценить значение дальнейших направлений развития. Разнообразный и богатый опыт консультация с
-								широким активом позволяет оценить значение направлений прогрессивного развития. Повседневная практика
-								показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки новых
-								предложений.
+							<div class="partners-block__text-desc">Располагается на берегу моря в 45 шагах от пляжа. На территории
+								подогреваемый бассейн, зеленый дворик, барбекю-зона, бесплатная парковка. Идеально подходит для отдыха с
+								детьми.
 							</div>
 							<a href="http://www.hotelsamotlor.ru" target="_blank" class="partners-block__button button">
 								<span>Узнать подробнее</span>
@@ -710,11 +802,9 @@
 					<div class="partners__body partners__two">
 						<div data-watch data-watch-once class="partners__block-text partners-block__text">
 							<div class="partners-block__text-title">Частный дом "Сибиряк"</div>
-							<div class="partners-block__text-desc">Разнообразный и богатый опыт укрепление и развитие структуры
-								позволяет оценить значение дальнейших направлений развития. Разнообразный и богатый опыт консультация с
-								широким активом позволяет оценить значение направлений прогрессивного развития. Повседневная практика
-								показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки новых
-								предложений.
+							<div class="partners-block__text-desc">Располагается в центре Лазаревской, в 1 км от центрального пляжа. В
+								комнатах все необходимое для проживания. Есть кухни для приготовления пищи, столики и посуда. Ухоженный
+								двор и пруд с рыбками. Подходит для отдыха с детьми.
 							</div>
 							<a href="https://otdyx-lazarevskoe.ru" target="_blank" class="partners-block__button button">
 								<span>Узнать подробнее</span>
@@ -734,22 +824,22 @@
 										</svg>
 									</button>
 								</div>
-								<div class="partners-block__photo-wrapper swiper-wrapper">
-									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/sibiryak/sibiryak-1.webp" type="image/webp"><img src="img/sibiryak/sibiryak-1.jpg" alt=""></picture>
-									</div>
-									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/sibiryak/sibiryak-2.webp" type="image/webp"><img src="img/sibiryak/sibiryak-2.jpg" alt=""></picture>
-									</div>
-									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/sibiryak/sibiryak-3.webp" type="image/webp"><img src="img/sibiryak/sibiryak-3.jpg" alt=""></picture>
-									</div>
-									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/sibiryak/sibiryak-4.webp" type="image/webp"><img src="img/sibiryak/sibiryak-4.jpg" alt=""></picture>
-									</div>
-									<div class="partners-block__photo-slide swiper-slide">
-										<picture><source srcset="img/sibiryak/sibiryak-5.webp" type="image/webp"><img src="img/sibiryak/sibiryak-5.jpg" alt=""></picture>
-									</div>
+								<div data-gallery="" class="partners-block__photo-wrapper swiper-wrapper">
+									<a href="img/sibiryak/sibiryak-1.jpg" class="partners-block__photo-slide swiper-slide">
+										<picture><source data-srcset="img/sibiryak/sibiryak-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/sibiryak/sibiryak-1.jpg" alt=""></picture>
+									</a>
+									<a href="img/sibiryak/sibiryak-2.jpg" class="partners-block__photo-slide swiper-slide">
+										<picture><source data-srcset="img/sibiryak/sibiryak-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/sibiryak/sibiryak-2.jpg" alt=""></picture>
+									</a>
+									<a href="img/sibiryak/sibiryak-3.jpg" class="partners-block__photo-slide swiper-slide">
+										<picture><source data-srcset="img/sibiryak/sibiryak-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/sibiryak/sibiryak-3.jpg" alt=""></picture>
+									</a>
+									<a href="img/sibiryak/sibiryak-4.jpg" class="partners-block__photo-slide swiper-slide">
+										<picture><source data-srcset="img/sibiryak/sibiryak-4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/sibiryak/sibiryak-4.jpg" alt=""></picture>
+									</a>
+									<a href="img/sibiryak/sibiryak-5.jpg" class="partners-block__photo-slide swiper-slide">
+										<picture><source data-srcset="img/sibiryak/sibiryak-5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/sibiryak/sibiryak-5.jpg" alt=""></picture>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -760,10 +850,10 @@
 			<section class="map">
 				<div class="map__container">
 					<h2 data-watch data-watch-once class="map__title title">Контакты</h2>
-					<div data-watch class="map__body" id="map__body"></div>
+					<div data-watch data-watch-once class="map__body" id="map__body"></div>
 
 					<div class="map__content">
-						<div data-watch data-watch-once class="map__contacts map-contacts">
+						<div data-da=".footer__container,767.98,0" data-watch data-watch-once class="map__contacts map-contacts">
 							<div class="map-contacts__elem">
 								<div class="map-contacts__elem-title">Адрес</div>
 								<a href="https://yandex.ru/maps/org/raduga/1309416016/?ll=39.328646%2C43.913508&z=16" target="_blank" class="map-contacts__elem-desc">Лазаревское,
@@ -771,22 +861,29 @@
 							</div>
 							<div class="map-contacts__elem">
 								<div class="map-contacts__elem-title">Телефон</div>
-								<a href="tel:+79999999999" class="map-contacts__elem-desc">8 999 999 99-99</a>
+								<div class="map-contacts__elem-wrapper">
+									<a href="tel:+79999999999" class="map-contacts__elem-desc">8 999 999 99-99</a>
+									<button data-popup="#popup" class="map__button button">
+										<span>
+											Заказать звонок
+										</span>
+									</button>
+								</div>
 							</div>
 							<div class="map-contacts__elem">
 								<div class="map-contacts__elem-title">Социальные сети</div>
 								<div class="map-contacts__elem-messengers">
-									<a href="#" class="map-contacts__elem-inst">
+									<a href="https://instagram.com/hotel_raduga/" target="_blank" class="map-contacts__elem-inst">
 										<svg>
 											<use xlink:href="img/icons/icons.svg#svg-instagram"></use>
 										</svg>
 									</a>
-									<a href="#" class="map-contacts__elem-vk">
+									<a href="https://vk.com/raduganamore" target="_blank" class="map-contacts__elem-vk">
 										<svg>
 											<use xlink:href="img/icons/icons.svg#svg-vk"></use>
 										</svg>
 									</a>
-									<a href="#" class="map-contacts__elem-whatsapp">
+									<a href="https://wa.me/79282331010?text=Здравствуйте!%20Я%20хочу%20забронировать%20номер%20в%20гостевом%20доме%20&#171;Радуга&#187;" target="_blank" class="map-contacts__elem-whatsapp">
 										<svg>
 											<use xlink:href="img/icons/icons.svg#svg-whatsapp"></use>
 										</svg>
@@ -804,15 +901,8 @@
 									<!-- </span> -->
 								</div>
 							</div>
-							<div class="map-contacts__elem">
-								<button class="map__button button">
-									<span>
-										Забронировать
-									</span>
-								</button>
-							</div>
 						</div>
-						<div style="width:50%;overflow:hidden;position:relative;"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/1309416016?comments"></iframe><a href="https://yandex.ru/maps/org/raduga/1309416016/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Радуга
+						<div class="map__widget" style="width:100%;overflow:hidden;position:relative;"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/1309416016?comments"></iframe><a href="https://yandex.ru/maps/org/raduga/1309416016/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Радуга
 								на карте Сочи — Яндекс Карты</a></div>
 					</div>
 				</div>
@@ -821,66 +911,350 @@
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__body">
-					<a class="footer__logo logo" href="#">
+					<a class="footer__logo logo" href="/">
 						<svg>
 							<use xlink:href="img/icons/icons.svg#svg-logo"></use>
 						</svg>
 					</a>
 					<nav class="footer__menu">
-						<ul class="footer__list">
-							<li class="footer__item burger-menu__item">
-								<a href="#" data-goto=".footer" class="footer__link">
+						<ul data-watch data-watch-once class="footer__list">
+							<li class="footer__item">
+								<button data-goto-header data-goto=".main" class="footer__link">
 									Главная
-								</a>
+								</button>
 							</li>
-							<li class="footer__item burger-menu__item">
-								<a href="#" data-goto=".about" class="footer__link">
+							<li class="footer__item">
+								<button data-goto-header data-goto=".about" class="footer__link">
 									О нас
-								</a>
+								</button>
 							</li>
-							<li class="footer__item burger-menu__item">
-								<a href="#" data-goto=".rooms" class="footer__link">
+							<li class="footer__item">
+								<button data-goto-header data-goto=".rooms" class="footer__link">
 									Номера
-								</a>
+								</button>
 							</li>
-							<li class="footer__item burger-menu__item">
-								<a href="#" data-goto=".gallery" class="footer__link">
+							<li class="footer__item">
+								<button data-goto-header data-goto=".gallery" class="footer__link">
 									Галерея
-								</a>
+								</button>
 							</li>
-							<li class="footer__item burger-menu__item">
-								<a href="#" data-goto=".gallery" class="footer__link">
+							<li class="footer__item">
+								<button data-goto-header data-goto=".partners" class="footer__link">
 									Партнеры
-								</a>
+								</button>
 							</li>
-							<li class="footer__item burger-menu__item">
-								<a href="#" data-goto=".map" class="footer__link">
+							<li class="footer__item">
+								<button data-goto-header data-goto=".map" class="footer__link">
 									Контакты
-								</a>
-							</li>
-							<li class="footer__item burger-menu__item">
-								<a href="#" data-goto=".map" class="footer__link">
-									Политика конфиденциальности
-								</a>
+								</button>
 							</li>
 						</ul>
 					</nav>
 				</div>
+				<div class="footer__policy">
+					<button data-popup="#privacy" class="footer__policy-link">
+						Политика конфиденциальности
+					</button>
+				</div>
 			</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__title title">Заказать звонок</div>
+
+				<form data-ajax data-dev action="#" class="popup__form popup-form">
+					<div class="popup-form__input-group">
+						<input required="" type="text" name="name" autocomplete="off" onkeyup="this.value = this.value.replace(/[a-z0-9+= ]/gi,'');" class="popup-form__input">
+						<label class="popup-form__label">Имя</label>
+					</div>
+					<div class="popup-form__input-group">
+						<input required="" type="tel" name="tel" autocomplete="off" class="popup-form__input input-tel">
+						<label class="popup-form__label">Номер</label>
+					</div>
+					<div class="popup-form__input-group checkbox-group">
+						<input type="checkbox" id="popup-form__input-checkbox" checked>
+						<label for="popup-form__input-checkbox">Политика конфиденциальности</label>
+					</div>
+					<input type="submit" value="Отправить" class="popup-form__button">
+					<!-- <div class="popup-form__input-group">
+					<input data-datepicker type="text" name="" readonly class="popup-form__input">
+					<label class="popup-form__label">Дата заезда</label>
+				</div> -->
+				</form>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<!-- <script src="https://cdn.plyr.io/3.7.2/plyr.js?_v=20221220214356"></script> -->
-	<script src="js/app.min.js?_v=20221220214356"></script>
+	<div id="privacy" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content-privacy">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__title title">Политика конфиденциальности</div>
+				<div class="popup__privacy">Политика в отношении обработки персональных данных
+					1. Общие положения
+					Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального
+					закона от 27.07.2006. №152-ФЗ «О персональных данных» (далее - Закон о персональных данных) и определяет
+					порядок обработки персональных данных и меры по обеспечению безопасности персональных данных,
+					предпринимаемые Иванов Иван Иванович (далее – Оператор).
+					1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и
+					свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на
+					неприкосновенность частной жизни, личную и семейную тайну.
+					1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется
+					ко всей информации, которую Оператор может получить о посетителях веб-сайта https://raduga-hotel.ru.
+					2. Основные понятия, используемые в Политике
+					2.1. Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств
+					вычислительной техники.
+					2.2. Блокирование персональных данных – временное прекращение обработки персональных данных (за исключением
+					случаев, если обработка необходима для уточнения персональных данных).
+					2.3. Веб-сайт – совокупность графических и информационных материалов, а также программ для ЭВМ и баз данных,
+					обеспечивающих их доступность в сети интернет по сетевому адресу https://raduga-hotel.ru.
+					2.4. Информационная система персональных данных — совокупность содержащихся в базах данных персональных
+					данных, и обеспечивающих их обработку информационных технологий и технических средств.
+					2.5. Обезличивание персональных данных — действия, в результате которых невозможно определить без
+					использования дополнительной информации принадлежность персональных данных конкретному Пользователю или
+					иному субъекту персональных данных.
+					2.6. Обработка персональных данных – любое действие (операция) или совокупность действий (операций),
+					совершаемых с использованием средств автоматизации или без использования таких средств с персональными
+					данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение),
+					извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование,
+					удаление, уничтожение персональных данных.
+					2.7. Оператор – государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно
+					или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также
+					определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия
+					(операции), совершаемые с персональными данными.
+					2.8. Персональные данные – любая информация, относящаяся прямо или косвенно к определенному или
+					определяемому Пользователю веб-сайта https://raduga-hotel.ru.
+					2.9. Персональные данные, разрешенные субъектом персональных данных для распространения, - персональные
+					данные, доступ неограниченного круга лиц к которым предоставлен субъектом персональных данных путем дачи
+					согласия на обработку персональных данных, разрешенных субъектом персональных данных для распространения в
+					порядке, предусмотренном Законом о персональных данных (далее - персональные данные, разрешенные для
+					распространения).
+					2.10. Пользователь – любой посетитель веб-сайта https://raduga-hotel.ru.
+					2.11. Предоставление персональных данных – действия, направленные на раскрытие персональных данных
+					определенному лицу или определенному кругу лиц.
+					2.12. Распространение персональных данных – любые действия, направленные на раскрытие персональных данных
+					неопределенному кругу лиц (передача персональных данных) или на ознакомление с персональными данными
+					неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой информации,
+					размещение в информационно-телекоммуникационных сетях или предоставление доступа к персональным данным
+					каким-либо иным способом.
+					2.13. Трансграничная передача персональных данных – передача персональных данных на территорию иностранного
+					государства органу власти иностранного государства, иностранному физическому или иностранному юридическому
+					лицу.
+					2.14. Уничтожение персональных данных – любые действия, в результате которых персональные данные
+					уничтожаются безвозвратно с невозможностью дальнейшего восстановления содержания персональных данных в
+					информационной системе персональных данных и (или) уничтожаются материальные носители персональных данных.
+					3. Основные права и обязанности Оператора
+					3.1. Оператор имеет право:
+					– получать от субъекта персональных данных достоверные информацию и/или документы, содержащие персональные
+					данные;
+					– в случае отзыва субъектом персональных данных согласия на обработку персональных данных Оператор вправе
+					продолжить обработку персональных данных без согласия субъекта персональных данных при наличии оснований,
+					указанных в Законе о персональных данных;
+					– самостоятельно определять состав и перечень мер, необходимых и достаточных для обеспечения выполнения
+					обязанностей, предусмотренных Законом о персональных данных и принятыми в соответствии с ним нормативными
+					правовыми актами, если иное не предусмотрено Законом о персональных данных или другими федеральными
+					законами.
+					3.2. Оператор обязан:
+					– предоставлять субъекту персональных данных по его просьбе информацию, касающуюся обработки его
+					персональных данных;
+					– организовывать обработку персональных данных в порядке, установленном действующим законодательством РФ;
+					– отвечать на обращения и запросы субъектов персональных данных и их законных представителей в соответствии
+					с требованиями Закона о персональных данных;
+					– сообщать в уполномоченный орган по защите прав субъектов персональных данных по запросу этого органа
+					необходимую информацию в течение 30 дней с даты получения такого запроса;
+					– публиковать или иным образом обеспечивать неограниченный доступ к настоящей Политике в отношении обработки
+					персональных данных;
+					– принимать правовые, организационные и технические меры для защиты персональных данных от неправомерного
+					или случайного доступа к ним, уничтожения, изменения, блокирования, копирования, предоставления,
+					распространения персональных данных, а также от иных неправомерных действий в отношении персональных данных;
+					– прекратить передачу (распространение, предоставление, доступ) персональных данных, прекратить обработку и
+					уничтожить персональные данные в порядке и случаях, предусмотренных Законом о персональных данных;
+					– исполнять иные обязанности, предусмотренные Законом о персональных данных.
+					4. Основные права и обязанности субъектов персональных данных
+					4.1. Субъекты персональных данных имеют право:
+					– получать информацию, касающуюся обработки его персональных данных, за исключением случаев, предусмотренных
+					федеральными законами. Сведения предоставляются субъекту персональных данных Оператором в доступной форме, и
+					в них не должны содержаться персональные данные, относящиеся к другим субъектам персональных данных, за
+					исключением случаев, когда имеются законные основания для раскрытия таких персональных данных. Перечень
+					информации и порядок ее получения установлен Законом о персональных данных;
+					– требовать от оператора уточнения его персональных данных, их блокирования или уничтожения в случае, если
+					персональные данные являются неполными, устаревшими, неточными, незаконно полученными или не являются
+					необходимыми для заявленной цели обработки, а также принимать предусмотренные законом меры по защите своих
+					прав;
+					– выдвигать условие предварительного согласия при обработке персональных данных в целях продвижения на рынке
+					товаров, работ и услуг;
+					– на отзыв согласия на обработку персональных данных;
+					– обжаловать в уполномоченный орган по защите прав субъектов персональных данных или в судебном порядке
+					неправомерные действия или бездействие Оператора при обработке его персональных данных;
+					– на осуществление иных прав, предусмотренных законодательством РФ.
+					4.2. Субъекты персональных данных обязаны:
+					– предоставлять Оператору достоверные данные о себе;
+					– сообщать Оператору об уточнении (обновлении, изменении) своих персональных данных.
+					4.3. Лица, передавшие Оператору недостоверные сведения о себе, либо сведения о другом субъекте персональных
+					данных без согласия последнего, несут ответственность в соответствии с законодательством РФ.
+					5. Оператор может обрабатывать следующие персональные данные Пользователя
+					5.1. Фамилия, имя, отчество.
+					5.2. Номера телефонов.
+					5.3. Также на сайте происходит сбор и обработка обезличенных данных о посетителях (в т.ч. файлов «cookie») с
+					помощью сервисов интернет-статистики (Яндекс Метрика и Гугл Аналитика и других).
+					5.4. Вышеперечисленные данные далее по тексту Политики объединены общим понятием Персональные данные.
+					5.5. Обработка специальных категорий персональных данных, касающихся расовой, национальной принадлежности,
+					политических взглядов, религиозных или философских убеждений, интимной жизни, Оператором не осуществляется.
+					5.6. Обработка персональных данных, разрешенных для распространения, из числа специальных категорий
+					персональных данных, указанных в ч. 1 ст. 10 Закона о персональных данных, допускается, если соблюдаются
+					запреты и условия, предусмотренные ст. 10.1 Закона о персональных данных.
+					5.7. Согласие Пользователя на обработку персональных данных, разрешенных для распространения, оформляется
+					отдельно от других согласий на обработку его персональных данных. При этом соблюдаются условия,
+					предусмотренные, в частности, ст. 10.1 Закона о персональных данных. Требования к содержанию такого согласия
+					устанавливаются уполномоченным органом по защите прав субъектов персональных данных.
+					5.7.1 Согласие на обработку персональных данных, разрешенных для распространения, Пользователь предоставляет
+					Оператору непосредственно.
+					5.7.2 Оператор обязан в срок не позднее трех рабочих дней с момента получения указанного согласия
+					Пользователя опубликовать информацию об условиях обработки, о наличии запретов и условий на обработку
+					неограниченным кругом лиц персональных данных, разрешенных для распространения.
+					5.7.3 Передача (распространение, предоставление, доступ) персональных данных, разрешенных субъектом
+					персональных данных для распространения, должна быть прекращена в любое время по требованию субъекта
+					персональных данных. Данное требование должно включать в себя фамилию, имя, отчество (при наличии),
+					контактную информацию (номер телефона, адрес электронной почты или почтовый адрес) субъекта персональных
+					данных, а также перечень персональных данных, обработка которых подлежит прекращению. Указанные в данном
+					требовании персональные данные могут обрабатываться только Оператором, которому оно направлено.
+					5.7.4 Согласие на обработку персональных данных, разрешенных для распространения, прекращает свое действие с
+					момента поступления Оператору требования, указанного в п. 5.7.3 настоящей Политики в отношении обработки
+					персональных данных.
+					6. Принципы обработки персональных данных
+					6.1. Обработка персональных данных осуществляется на законной и справедливой основе.
+					6.2. Обработка персональных данных ограничивается достижением конкретных, заранее определенных и законных
+					целей. Не допускается обработка персональных данных, несовместимая с целями сбора персональных данных.
+					6.3. Не допускается объединение баз данных, содержащих персональные данные, обработка которых осуществляется
+					в целях, несовместимых между собой.
+					6.4. Обработке подлежат только персональные данные, которые отвечают целям их обработки.
+					6.5. Содержание и объем обрабатываемых персональных данных соответствуют заявленным целям обработки. Не
+					допускается избыточность обрабатываемых персональных данных по отношению к заявленным целям их обработки.
+					6.6. При обработке персональных данных обеспечивается точность персональных данных, их достаточность, а в
+					необходимых случаях и актуальность по отношению к целям обработки персональных данных. Оператор принимает
+					необходимые меры и/или обеспечивает их принятие по удалению или уточнению неполных или неточных данных.
+					6.7. Хранение персональных данных осуществляется в форме, позволяющей определить субъекта персональных
+					данных, не дольше, чем этого требуют цели обработки персональных данных, если срок хранения персональных
+					данных не установлен федеральным законом, договором, стороной которого, выгодоприобретателем или поручителем
+					по которому является субъект персональных данных. Обрабатываемые персональные данные уничтожаются либо
+					обезличиваются по достижении целей обработки или в случае утраты необходимости в достижении этих целей, если
+					иное не предусмотрено федеральным законом.
+					7. Цели обработки персональных данных
+					7.1. Цель обработки персональных данных Пользователя:
+					– Уточнение деталей бронирования.
+					7.2. Также Оператор имеет право направлять Пользователю уведомления о новых продуктах и услугах, специальных
+					предложениях и различных событиях. Пользователь всегда может отказаться от получения информационных
+					сообщений, направив Оператору письмо на адрес электронной почты raduga@mail.ru с пометкой «Отказ от
+					уведомлений о новых продуктах и услугах и специальных предложениях».
+					7.3. Обезличенные данные Пользователей, собираемые с помощью сервисов интернет-статистики, служат для сбора
+					информации о действиях Пользователей на сайте, улучшения качества сайта и его содержания.
+					8. Правовые основания обработки персональных данных
+					8.1. Правовыми основаниями обработки персональных данных Оператором являются:
+					– перечислите нормативно-правовые акты, регулирующие отношения, связанные с вашей деятельностью, например,
+					если ваша деятельность связана с информационными технологиями, в частности с созданием сайтов, то здесь
+					можно указать Федеральный закон "Об информации, информационных технологиях и о защите информации" от
+					27.07.2006 N 149-ФЗ;
+					– уставные документы Оператора;
+					– договоры, заключаемые между оператором и субъектом персональных данных;
+					– федеральные законы, иные нормативно-правовые акты в сфере защиты персональных данных;
+					– согласия Пользователей на обработку их персональных данных, на обработку персональных данных, разрешенных
+					для распространения.
+					8.2. Оператор обрабатывает персональные данные Пользователя только в случае их заполнения и/или отправки
+					Пользователем самостоятельно через специальные формы, расположенные на сайте https://raduga-hotel.ru или
+					направленные Оператору посредством электронной почты. Заполняя соответствующие формы и/или отправляя свои
+					персональные данные Оператору, Пользователь выражает свое согласие с данной Политикой.
+					8.3. Оператор обрабатывает обезличенные данные о Пользователе в случае, если это разрешено в настройках
+					браузера Пользователя (включено сохранение файлов «cookie» и использование технологии JavaScript).
+					8.4. Субъект персональных данных самостоятельно принимает решение о предоставлении его персональных данных и
+					дает согласие свободно, своей волей и в своем интересе.
+					9. Условия обработки персональных данных
+					9.1. Обработка персональных данных осуществляется с согласия субъекта персональных данных на обработку его
+					персональных данных.
+					9.2. Обработка персональных данных необходима для достижения целей, предусмотренных международным договором
+					Российской Федерации или законом, для осуществления возложенных законодательством Российской Федерации на
+					оператора функций, полномочий и обязанностей.
+					9.3. Обработка персональных данных необходима для осуществления правосудия, исполнения судебного акта, акта
+					другого органа или должностного лица, подлежащих исполнению в соответствии с законодательством Российской
+					Федерации об исполнительном производстве.
+					9.4. Обработка персональных данных необходима для исполнения договора, стороной которого либо
+					выгодоприобретателем или поручителем по которому является субъект персональных данных, а также для
+					заключения договора по инициативе субъекта персональных данных или договора, по которому субъект
+					персональных данных будет являться выгодоприобретателем или поручителем.
+					9.5. Обработка персональных данных необходима для осуществления прав и законных интересов оператора или
+					третьих лиц либо для достижения общественно значимых целей при условии, что при этом не нарушаются права и
+					свободы субъекта персональных данных.
+					9.6. Осуществляется обработка персональных данных, доступ неограниченного круга лиц к которым предоставлен
+					субъектом персональных данных либо по его просьбе (далее – общедоступные персональные данные).
+					9.7. Осуществляется обработка персональных данных, подлежащих опубликованию или обязательному раскрытию в
+					соответствии с федеральным законом.
+					10. Порядок сбора, хранения, передачи и других видов обработки персональных данных
+					Безопасность персональных данных, которые обрабатываются Оператором, обеспечивается путем реализации
+					правовых, организационных и технических мер, необходимых для выполнения в полном объеме требований
+					действующего законодательства в области защиты персональных данных.
+					10.1. Оператор обеспечивает сохранность персональных данных и принимает все возможные меры, исключающие
+					доступ к персональным данным неуполномоченных лиц.
+					10.2. Персональные данные Пользователя никогда, ни при каких условиях не будут переданы третьим лицам, за
+					исключением случаев, связанных с исполнением действующего законодательства либо в случае, если субъектом
+					персональных данных дано согласие Оператору на передачу данных третьему лицу для исполнения обязательств по
+					гражданско-правовому договору.
+					10.3. В случае выявления неточностей в персональных данных, Пользователь может актуализировать их
+					самостоятельно, путем направления Оператору уведомление на адрес электронной почты Оператора raduga@mail.ru
+					с пометкой «Актуализация персональных данных».
+					10.4. Срок обработки персональных данных определяется достижением целей, для которых были собраны
+					персональные данные, если иной срок не предусмотрен договором или действующим законодательством.
+					Пользователь может в любой момент отозвать свое согласие на обработку персональных данных, направив
+					Оператору уведомление посредством электронной почты на электронный адрес Оператора raduga@mail.ru с пометкой
+					«Отзыв согласия на обработку персональных данных».
+					10.5. Вся информация, которая собирается сторонними сервисами, в том числе платежными системами, средствами
+					связи и другими поставщиками услуг, хранится и обрабатывается указанными лицами (Операторами) в соответствии
+					с их Пользовательским соглашением и Политикой конфиденциальности. Субъект персональных данных и/или
+					Пользователь обязан самостоятельно своевременно ознакомиться с указанными документами. Оператор не несет
+					ответственность за действия третьих лиц, в том числе указанных в настоящем пункте поставщиков услуг.
+					10.6. Установленные субъектом персональных данных запреты на передачу (кроме предоставления доступа), а
+					также на обработку или условия обработки (кроме получения доступа) персональных данных, разрешенных для
+					распространения, не действуют в случаях обработки персональных данных в государственных, общественных и иных
+					публичных интересах, определенных законодательством РФ.
+					10.7. Оператор при обработке персональных данных обеспечивает конфиденциальность персональных данных.
+					10.8. Оператор осуществляет хранение персональных данных в форме, позволяющей определить субъекта
+					персональных данных, не дольше, чем этого требуют цели обработки персональных данных, если срок хранения
+					персональных данных не установлен федеральным законом, договором, стороной которого, выгодоприобретателем
+					или поручителем по которому является субъект персональных данных.
+					10.9. Условием прекращения обработки персональных данных может являться достижение целей обработки
+					персональных данных, истечение срока действия согласия субъекта персональных данных или отзыв согласия
+					субъектом персональных данных, а также выявление неправомерной обработки персональных данных.
+					11. Перечень действий, производимых Оператором с полученными персональными данными
+					11.1. Оператор осуществляет сбор, запись, систематизацию, накопление, хранение, уточнение (обновление,
+					изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание,
+					блокирование, удаление и уничтожение персональных данных.
+					11.2. Оператор осуществляет автоматизированную обработку персональных данных с получением и/или передачей
+					полученной информации по информационно-телекоммуникационным сетям или без таковой.
+					12. Трансграничная передача персональных данных
+					12.1. Оператор до начала осуществления трансграничной передачи персональных данных обязан убедиться в том,
+					что иностранным государством, на территорию которого предполагается осуществлять передачу персональных
+					данных, обеспечивается надежная защита прав субъектов персональных данных.
+					12.2. Трансграничная передача персональных данных на территории иностранных государств, не отвечающих
+					вышеуказанным требованиям, может осуществляться только в случае наличия согласия в письменной форме субъекта
+					персональных данных на трансграничную передачу его персональных данных и/или исполнения договора, стороной
+					которого является субъект персональных данных.
+					13. Конфиденциальность персональных данных
+					Оператор и иные лица, получившие доступ к персональным данным, обязаны не раскрывать третьим лицам и не
+					распространять персональные данные без согласия субъекта персональных данных, если иное не предусмотрено
+					федеральным законом.
+					14. Заключительные положения
+					14.1. Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его
+					персональных данных, обратившись к Оператору с помощью электронной почты raduga@mail.ru.
+					14.2. В данном документе будут отражены любые изменения политики обработки персональных данных Оператором.
+					Политика действует бессрочно до замены ее новой версией.
+					14.3. Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу
+					https://raduga-hotel.ru.</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- <script src="https://cdn.plyr.io/3.7.2/plyr.js?_v=20221225200442"></script> -->
+	<script src="js/app.min.js?_v=20221225200442"></script>
 
 </body>
 
