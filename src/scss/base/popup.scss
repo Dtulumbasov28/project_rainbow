@@ -21,7 +21,7 @@ body::after {
   left: 0;
   bottom: 0;
   right: 0;
-  padding: 30px 10px;
+  padding: 70px 10px;
   transition: visibility 0.8s ease 0s;
   visibility: hidden;
   pointer-events: none;
@@ -64,8 +64,16 @@ body::after {
     width: 100%;
     max-width: 480px;
     border-radius: 10px;
+
+    @media (max-width: $mobileSmall) {
+      padding: 20px 14px;
+    }
     .lock & {
       visibility: visible;
+    }
+
+    &-privacy {
+      max-width: 80%;
     }
   }
 
@@ -77,8 +85,13 @@ body::after {
     background-color: transparent;
     position: absolute;
     top: -50px;
-    right: -100px;
+    right: -50px;
     display: block;
+
+    @media (max-width: $mobile) {
+      top: -60px;
+      right: 0;
+    }
 
     // .popup__close:before,
     // .popup__close:after
@@ -112,7 +125,7 @@ body::after {
 
   &__title {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   // .popup__form

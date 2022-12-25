@@ -43,7 +43,11 @@
 
   &__img-slider {
     position: relative;
-    width: 70%;
+    width: 80%;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
   }
 
   // .room__img-wrapper
@@ -67,6 +71,10 @@
   &__block-top {
     display: flex;
     column-gap: 20px;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
   }
 
   // .room__block-bottom
@@ -76,25 +84,42 @@
   // .room__text
 
   &__text {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   // .room__title
 
   &__title {
+    @include adaptiveValue("font-size", 32, 22, 1400, 479, 1);
+
     display: inline-block;
     position: relative;
-    font-size: 32px;
     font-weight: 500;
     margin-bottom: 12px;
+
+    @media (max-width: $tablet) {
+      // display: flex;
+      // flex-direction: row-reverse;
+      // justify-content: flex-end;
+      // align-items: center;
+      // white-space: nowrap;
+      // column-gap: 10px;
+      display: block;
+    }
 
     &::before {
       position: absolute;
       content: "";
-      top: -30px;
+      top: -20px;
       width: 40px;
       height: 6px;
       background-color: $mainColorOrange;
+
+      @media (max-width: $tablet) {
+        //   position: unset;
+        width: 100%;
+        height: 2px;
+      }
     }
   }
 
@@ -103,6 +128,10 @@
   &__desc {
     line-height: math.div(22, 16);
     margin-bottom: 16px;
+
+    @media (max-width: $mobileSmall) {
+      font-size: 16px;
+    }
   }
 
   // .room__button
@@ -121,29 +150,61 @@
   // .room__icons
 
   &__icons {
-    width: 30%;
+    width: 20%;
+    max-height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    row-gap: 20px;
+    justify-content: space-between;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+      flex-direction: unset;
+      flex-wrap: wrap;
+      row-gap: 14px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: $mobileSmall) {
+      row-gap: 8px;
+    }
   }
 
   // .room__icons-item
 
   &__icons-item {
     display: flex;
+    align-items: center;
     column-gap: 20px;
     line-height: math.div(20, 16);
+
+    @media (max-width: $tablet) {
+      width: 30%;
+    }
+    @media (max-width: $mobile) {
+      width: 50%;
+      font-size: 16px;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 14px;
+      column-gap: 10px;
+    }
   }
 
   // .room__icons-item-img
 
   &__icons-item-img {
-    min-width: 50px;
-    min-height: 50px;
-    width: 50px;
-    height: 50px;
+    min-width: 32px;
+    min-height: 32px;
+    width: 32px;
+    height: 32px;
     fill: $mainColorFonts;
+
+    @media (max-width: $mobileSmall) {
+      min-width: 22px;
+      min-height: 22px;
+      width: 22px;
+      height: 22px;
+    }
   }
 
   // .room__icons-item-text
@@ -162,45 +223,5 @@
     bottom: 0;
     justify-content: center;
     margin-top: 10px;
-  }
-}
-.swiper-button-prev {
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  border: unset;
-  border-radius: unset;
-  height: 100%;
-  background-color: $mainColor;
-  opacity: 0.7;
-  transition: all 0.3s;
-
-  &:hover {
-    opacity: 0.8;
-    transition: all 0.3s;
-
-    & svg {
-      transform: scale(1.2) translateX(2px);
-    }
-  }
-}
-.swiper-button-next {
-  position: absolute;
-  z-index: 2;
-  right: 0;
-  border: unset;
-  border-radius: unset;
-  height: 100%;
-  background-color: $mainColor;
-  opacity: 0.7;
-  transition: all 0.3s;
-
-  &:hover {
-    opacity: 0.8;
-    transition: all 0.3s;
-
-    & svg {
-      transform: scale(1.2) translateX(2px);
-    }
   }
 }

@@ -1,50 +1,50 @@
 <footer class="footer">
 	<div class="footer__container">
 		<div class="footer__body">
-			<a class="footer__logo logo" href="#">
+			<a class="footer__logo logo" href="/">
 				<svg>
 					<use xlink:href="@img/icons/icons.svg#svg-logo"></use>
 				</svg>
 			</a>
 			<nav class="footer__menu">
-				<ul class="footer__list">
-					<li class="footer__item burger-menu__item">
-						<a href="#" data-goto=".footer" class="footer__link">
+				<ul data-watch data-watch-once class="footer__list">
+					<li class="footer__item">
+						<button data-goto-header data-goto=".main" class="footer__link">
 							Главная
-						</a>
+						</button>
 					</li>
-					<li class="footer__item burger-menu__item">
-						<a href="#" data-goto=".about" class="footer__link">
+					<li class="footer__item">
+						<button data-goto-header data-goto=".about" class="footer__link">
 							О нас
-						</a>
+						</button>
 					</li>
-					<li class="footer__item burger-menu__item">
-						<a href="#" data-goto=".rooms" class="footer__link">
+					<li class="footer__item">
+						<button data-goto-header data-goto=".rooms" class="footer__link">
 							Номера
-						</a>
+						</button>
 					</li>
-					<li class="footer__item burger-menu__item">
-						<a href="#" data-goto=".gallery" class="footer__link">
+					<li class="footer__item">
+						<button data-goto-header data-goto=".gallery" class="footer__link">
 							Галерея
-						</a>
+						</button>
 					</li>
-					<li class="footer__item burger-menu__item">
-						<a href="#" data-goto=".gallery" class="footer__link">
+					<li class="footer__item">
+						<button data-goto-header data-goto=".partners" class="footer__link">
 							Партнеры
-						</a>
+						</button>
 					</li>
-					<li class="footer__item burger-menu__item">
-						<a href="#" data-goto=".map" class="footer__link">
+					<li class="footer__item">
+						<button data-goto-header data-goto=".map" class="footer__link">
 							Контакты
-						</a>
-					</li>
-					<li class="footer__item burger-menu__item">
-						<a href="#" data-goto=".map" class="footer__link">
-							Политика конфиденциальности
-						</a>
+						</button>
 					</li>
 				</ul>
 			</nav>
+		</div>
+		<div class="footer__policy">
+			<button  data-popup="#privacy" class="footer__policy-link">
+				Политика конфиденциальности
+			</button>
 		</div>
 	</div>
 </footer>

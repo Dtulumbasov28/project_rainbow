@@ -1,10 +1,10 @@
 <section class="map">
 	<div class="map__container">
 		<h2 data-watch data-watch-once class="map__title title">Контакты</h2>
-		<div data-watch class="map__body" id="map__body"></div>
+		<div data-watch data-watch-once class="map__body" id="map__body"></div>
 
 		<div class="map__content">
-			<div data-watch data-watch-once class="map__contacts map-contacts">
+			<div data-da=".footer__container,767.98,0" data-watch data-watch-once class="map__contacts map-contacts">
 				<div class="map-contacts__elem">
 					<div class="map-contacts__elem-title">Адрес</div>
 					<a href="https://yandex.ru/maps/org/raduga/1309416016/?ll=39.328646%2C43.913508&z=16" target="_blank"
@@ -13,22 +13,30 @@
 				</div>
 				<div class="map-contacts__elem">
 					<div class="map-contacts__elem-title">Телефон</div>
-					<a href="tel:+79999999999" class="map-contacts__elem-desc">8 999 999 99-99</a>
+					<div class="map-contacts__elem-wrapper">
+						<a href="tel:+79999999999" class="map-contacts__elem-desc">8 999 999 99-99</a>
+						<button data-popup="#popup" class="map__button button">
+							<span>
+								Заказать звонок
+							</span>
+						</button>
+					</div>
 				</div>
 				<div class="map-contacts__elem">
 					<div class="map-contacts__elem-title">Социальные сети</div>
 					<div class="map-contacts__elem-messengers">
-						<a href="#" class="map-contacts__elem-inst">
+						<a href="https://instagram.com/hotel_raduga/" target="_blank" class="map-contacts__elem-inst">
 							<svg>
 								<use xlink:href="@img/icons/icons.svg#svg-instagram"></use>
 							</svg>
 						</a>
-						<a href="#" class="map-contacts__elem-vk">
+						<a href="https://vk.com/raduganamore" target="_blank" class="map-contacts__elem-vk">
 							<svg>
 								<use xlink:href="@img/icons/icons.svg#svg-vk"></use>
 							</svg>
 						</a>
-						<a href="#" class="map-contacts__elem-whatsapp">
+						<a href="https://wa.me/79282331010?text=Здравствуйте!%20Я%20хочу%20забронировать%20номер%20в%20гостевом%20доме%20&#171;Радуга&#187;"
+							target="_blank" class="map-contacts__elem-whatsapp">
 							<svg>
 								<use xlink:href="@img/icons/icons.svg#svg-whatsapp"></use>
 							</svg>
@@ -46,15 +54,8 @@
 						<!-- </span> -->
 					</div>
 				</div>
-				<div class="map-contacts__elem">
-					<button class="map__button button">
-						<span>
-							Забронировать
-						</span>
-					</button>
-				</div>
 			</div>
-			<div style="width:50%;overflow:hidden;position:relative;"><iframe
+			<div class="map__widget" style="width:100%;overflow:hidden;position:relative;"><iframe
 					style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box"
 					src="https://yandex.ru/maps-reviews-widget/1309416016?comments"></iframe><a
 					href="https://yandex.ru/maps/org/raduga/1309416016/" target="_blank"

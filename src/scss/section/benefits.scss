@@ -53,6 +53,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     @media (max-width: $notebook) {
       width: 47%;
@@ -74,6 +75,14 @@
       fill: $mainColorFonts;
       width: 120px;
       height: 120px;
+    }
+  }
+
+  // .benefits__card-icon-beach
+
+  &__card-icon-beach {
+    & svg {
+      width: 105px;
     }
   }
   // .benefits__card-title

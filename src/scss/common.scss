@@ -2,6 +2,11 @@
 section {
   padding-top: 60px;
   padding-bottom: 40px;
+
+  @media (max-width: $tablet) {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
 }
 .logo {
   width: 223px;
@@ -145,6 +150,10 @@ section {
   border: 2px solid $mainColorFonts;
   column-gap: 10px;
 
+  @media (max-width: $mobile) {
+    width: 40px;
+  }
+
   & svg {
     width: 35px;
     height: 35px;
@@ -179,6 +188,32 @@ section {
     transition: all 0.3s;
   }
 }
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  z-index: 2;
+  border: unset;
+  border-radius: unset;
+  background-color: $mainColor;
+  opacity: 0.7;
+  transition: all 0.3s;
+  height: 100%;
+  &:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+
+    & svg {
+      transform: scale(1.2) translateX(2px);
+    }
+  }
+}
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-button-next {
+  right: 0;
+}
+
 // Стили для плеера Plyr
 
 // .plyr {
@@ -393,6 +428,24 @@ section {
       &:nth-child(3) {
         animation-delay: 0.4s;
       }
+      &:nth-child(4) {
+        animation-delay: 0.5s;
+      }
+      &:nth-child(5) {
+        animation-delay: 0.6s;
+      }
+      &:nth-child(6) {
+        animation-delay: 0.7s;
+      }
+      &:nth-child(7) {
+        animation-delay: 0.8s;
+      }
+      &:nth-child(8) {
+        animation-delay: 0.9s;
+      }
+      &:nth-child(9) {
+        animation-delay: 1s;
+      }
     }
   }
 }
@@ -479,6 +532,31 @@ section {
   &._watcher-view {
     animation: appearanceX 0.6s 0.2s forwards;
   }
+
+  @media (max-width: $mobile) {
+    .map-contacts__elem {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    &._watcher-view {
+      & .map-contacts__elem {
+        animation: appearanceX 0.6s 0.2s forwards;
+
+        &:nth-child(1) {
+          animation-delay: 0.2s;
+        }
+        &:nth-child(2) {
+          animation-delay: 0.3s;
+        }
+        &:nth-child(3) {
+          animation-delay: 0.4s;
+        }
+        &:nth-child(4) {
+          animation-delay: 0.5s;
+        }
+      }
+    }
+  }
 }
 .map__body {
   transform: translateX(100%);
@@ -489,4 +567,52 @@ section {
   }
 }
 
+// footer
+.footer__list {
+  @media (max-width: $mobile) {
+    .footer__item {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    &._watcher-view {
+      & .footer__item {
+        animation: appearanceX 0.6s 0.2s forwards;
+
+        &:nth-child(1) {
+          animation-delay: 0.2s;
+        }
+        &:nth-child(2) {
+          animation-delay: 0.3s;
+        }
+        &:nth-child(3) {
+          animation-delay: 0.4s;
+        }
+        &:nth-child(4) {
+          animation-delay: 0.5s;
+        }
+        &:nth-child(5) {
+          animation-delay: 0.6s;
+        }
+        &:nth-child(6) {
+          animation-delay: 0.7s;
+        }
+      }
+    }
+  }
+}
+
 // Виджет Инстаграм
+#instawall-root72650 {
+  display: flex;
+  position: relative;
+}
+#instawall-root72650:after {
+  content: "*";
+  position: absolute;
+  left: 150px;
+  top: 7px;
+}
+
+//стили галереи LightGallery
+
+
