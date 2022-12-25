@@ -4397,6 +4397,7 @@
                 slidesPerView: 1,
                 spaceBetween: 20,
                 speed: 800,
+                loop: true,
                 pagination: {
                     el: ".about__pagination",
                     type: "bullets",
@@ -4415,6 +4416,7 @@
                 slidesPerView: 1,
                 spaceBetween: 0,
                 speed: 800,
+                loop: true,
                 pagination: {
                     el: ".room-img__slider-pagination",
                     type: "bullets",
