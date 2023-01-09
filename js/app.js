@@ -4391,21 +4391,16 @@
                 on: {}
             });
             if (document.querySelector(".about__block-img")) new core(".about__block-img", {
-                modules: [ Navigation, Pagination ],
+                modules: [ Navigation ],
                 observer: true,
                 observeParents: true,
                 slidesPerView: 1,
                 spaceBetween: 20,
                 speed: 800,
                 loop: true,
-                pagination: {
-                    el: ".about__pagination",
-                    type: "bullets",
-                    clickable: true
-                },
                 navigation: {
-                    prevEl: ".swiper-button-prev-rooms",
-                    nextEl: ".swiper-button-next-rooms"
+                    prevEl: ".swiper-button-prev-about",
+                    nextEl: ".swiper-button-next-about"
                 },
                 on: {}
             });
@@ -6438,25 +6433,6 @@ PERFORMANCE OF THIS SOFTWARE.
             script.async = true;
             script.src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abb5e2da36ced51eeb2559103acb5547f520b185b9b55ab4c3e49699dba36001e&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false";
             document.getElementById("map__body").appendChild(script);
-        }
-        function weatherBalloon(cityID) {
-            var key = "c87e30dc724a6837d6b6b97a464a2670";
-            fetch("https://api.openweathermap.org/data/2.5/weather?id=" + 536625 + "&appid=" + key + "&lang=RU").then((function(resp) {
-                return resp.json();
-            })).then((function(data) {
-                drawWeather(data);
-            })).catch((function() {}));
-        }
-        window.onload = function() {
-            weatherBalloon(6167865);
-        };
-        function drawWeather(d) {
-            var celcius = Math.round(parseFloat(d.main.temp) - 273.15);
-            Math.round(1.8 * (parseFloat(d.main.temp) - 273.15) + 32);
-            var description = d.weather[0].description;
-            document.getElementById("description").innerHTML = description;
-            document.getElementById("temp").innerHTML = celcius + "&deg;";
-            if (description.indexOf("rain") > 0) document.body.className = "rainy"; else if (description.indexOf("cloud") > 0) document.body.className = "cloudy"; else if (description.indexOf("sunny") > 0) document.body.className = "sunny";
         }
         window.addEventListener("DOMContentLoaded", (function() {
             [].forEach.call(document.querySelectorAll(".input-tel"), (function(input) {
