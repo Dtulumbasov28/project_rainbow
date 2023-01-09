@@ -109,7 +109,7 @@ function initSliders() {
 		new Swiper('.about__block-img', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation, Pagination],
+			modules: [Navigation],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -135,11 +135,11 @@ function initSliders() {
 
 			// Пагинация
 
-			pagination: {
-				el: ".about__pagination",
-				type: "bullets",
-				clickable: true,
-			},
+			// pagination: {
+			// 	el: ".about__pagination",
+			// 	type: "bullets",
+			// 	clickable: true,
+			// },
 
 
 			// Скроллбар
@@ -152,8 +152,8 @@ function initSliders() {
 
 			// Кнопки "влево/вправо"
 			navigation: {
-				prevEl: '.swiper-button-prev-rooms',
-				nextEl: '.swiper-button-next-rooms',
+				prevEl: '.swiper-button-prev-about',
+				nextEl: '.swiper-button-next-about',
 			},
 
 			// Брейкпоинты

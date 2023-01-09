@@ -2,6 +2,18 @@
 	<div class="about__container">
 		<div class="about__body">
 			<div data-watch data-watch-once class="about__block-img swiper">
+				<div class="swiper-button-wrapper swiper-button-wrapper-about">
+					<button type="button" class="swiper-button swiper-button-prev swiper-button-prev-about">
+						<svg>
+							<use xlink:href="@img/icons/icons.svg#svg-arrow"></use>
+						</svg>
+					</button>
+					<button type="button" class="swiper-button swiper-button-next swiper-button-next-about">
+						<svg>
+							<use xlink:href="@img/icons/icons.svg#svg-arrow"></use>
+						</svg>
+					</button>
+				</div>
 				<div data-gallery class="about__block-img-wrapper swiper-wrapper">
 					<!-- <video class="about__video-player" controls data-poster="@img/about__video-preview.jpg">
 						<source src="@img/video.mp4" type="video/mp4" />
@@ -32,7 +44,7 @@
 					<div><button id="video-speed-normal">Норма</button></div>
 					<div><input type="range" id="video-volume">Звук</div> -->
 				</div>
-				<div class="about__pagination swiper-pagination"></div>
+				<!-- <div class="about__pagination swiper-pagination"></div> -->
 			</div>
 			<div class="about__block-text">
 				<h2 data-watch data-watch-once class="title about__title">О нас</h2>
