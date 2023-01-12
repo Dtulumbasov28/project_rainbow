@@ -2069,21 +2069,43 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
+  margin-top: 16px;
+}
+
+.room__spollers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  min-width: 250px;
+  row-gap: 10px;
 }
 
 .room__text {
   margin-top: 60px;
+  width: 80%;
 }
 
-.room__price-text {
+.room__price-button {
   margin-bottom: 10px;
 }
 
+.room__price-button span {
+  border-color: #333333;
+}
+
+.room__price-button span:hover {
+  border-color: #333333;
+  background-color: #333333;
+}
+
 .room__price table {
-  border: 1px solid black;
+  width: 100%;
+  font-size: 17px;
+  border: 1px solid #333333;
   border-collapse: collapse;
 }
 
@@ -2092,8 +2114,9 @@ section {
 }
 
 .room__price td {
-  padding: 18px 10px;
+  padding: 10px 10px;
   border: 1px solid;
+  white-space: nowrap;
 }
 
 .room__title {
