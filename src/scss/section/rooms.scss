@@ -81,32 +81,52 @@
   &__block-bottom {
     display: flex;
     align-items: center;
-    column-gap: 30px;
+	 margin-top: 16px;
+    //  column-gap: 30px;
   }
 
+  // room__spollers
+  &__spollers {
+    display: flex;
+    flex-direction: column-reverse;
+    min-width: 250px;
+    row-gap: 10px;
+  }
   // .room__text
 
   &__text {
     margin-top: 60px;
+    width: 80%;
   }
 
-  // .room__price-text
-  &__price-text {
+  // .room__price-button
+  &__price-button {
     margin-bottom: 10px;
+    & span {
+      border-color: #333333;
+      &:hover {
+        border-color: #333333;
+        background-color: #333333;
+      }
+    }
   }
 
   // .room__price
   &__price {
     table {
-      border: 1px solid black;
+      width: 100%;
+      font-size: 17px;
+
+      border: 1px solid $mainColorFonts;
       border-collapse: collapse;
     }
     tr {
       text-align: center;
     }
     td {
-      padding: 18px 10px;
+      padding: 10px 10px;
       border: 1px solid;
+      white-space: nowrap;
     }
   }
 
