@@ -80,23 +80,63 @@
   // .room__block-bottom
   &__block-bottom {
     display: flex;
-    align-items: center;
-	 margin-top: 16px;
-    //  column-gap: 30px;
+    align-items: flex-end;
+    margin-top: 16px;
+    column-gap: 50px;
+
+    & .room__price-mobile {
+      display: none;
+    }
+    @media (max-width: $tablet) {
+      align-items: center;
+      column-gap: 20px;
+
+      & .spollers {
+        display: none;
+      }
+
+      & .room__price-mobile {
+        display: block;
+      }
+    }
+    @media (max-width: $mobile) {
+      flex-direction: column;
+
+      & .room__price-mobile {
+        width: 100%;
+        margin-top: 12px;
+      }
+      // & .room__price-mobile {
+      //   display: none;
+      // }
+
+      // & .spollers {
+      //   display: inline-block;
+      // }
+    }
   }
 
-  // room__spollers
+  // .room__spollers
   &__spollers {
     display: flex;
     flex-direction: column-reverse;
-    min-width: 250px;
+    min-width: 301px;
     row-gap: 10px;
+
+    //  @media (max-width: $mobile) {
+    //    flex-direction: column;
+    //  }
   }
   // .room__text
 
   &__text {
     margin-top: 60px;
     width: 80%;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin-top: 10px;
+    }
   }
 
   // .room__price-button
@@ -127,6 +167,10 @@
       padding: 10px 10px;
       border: 1px solid;
       white-space: nowrap;
+
+      @media (max-width: $mobile) {
+        padding: 7px 10px;
+      }
     }
   }
 

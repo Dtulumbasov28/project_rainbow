@@ -3,8 +3,7 @@
 		<div class="popup__content">
 			<button data-close type="button" class="popup__close"></button>
 			<div class="popup__title title">Заказать звонок</div>
-
-			<form data-ajax data-dev action="#" class="popup__form popup-form">
+			<form data-ajax action="send.php" method="POST" class="popup__form popup-form">
 				<div class="popup-form__input-group">
 					<input required="" type="text" name="name" autocomplete="off"
 						onkeyup="this.value = this.value.replace(/[a-z0-9+= ]/gi,'');" class="popup-form__input">

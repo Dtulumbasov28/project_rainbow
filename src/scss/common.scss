@@ -390,27 +390,19 @@ section {
     animation: appearanceY 0.6s 0.2s forwards;
   }
 }
-
-.room__img-slider {
-  transform: translateY(20%);
-  opacity: 0;
+.room__block-top {
+  .room__img-slider {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
 
   &._watcher-view {
-    animation: appearanceY 0.6s 0.2s forwards;
+    .room__img-slider {
+      animation: appearanceX 0.6s 0.2s forwards;
+    }
   }
-}
 
-.room__text {
-  transform: translateX(-100%);
-  opacity: 0;
-
-  &._watcher-view {
-    animation: appearanceX 0.6s 0.2s forwards;
-  }
-}
-
-.room__icons {
-  & .room__icons-item {
+  .room__icons-item {
     transform: translateX(50%);
     opacity: 0;
   }
@@ -453,6 +445,39 @@ section {
         animation-delay: 1.2s;
       }
     }
+  }
+}
+.room__block-bottom {
+  .room__text {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  &._watcher-view {
+    .room__text {
+      animation: appearanceX 0.6s 0.2s forwards;
+    }
+  }
+
+  .room__price-mobile,
+  .spollers {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+
+  &._watcher-view {
+    .room__price-mobile,
+    .spollers {
+      animation: appearanceX 0.6s 0.2s forwards;
+    }
+  }
+}
+.room__text {
+  transform: translateX(-100%);
+  opacity: 0;
+
+  &._watcher-view {
+    animation: appearanceX 0.6s 0.2s forwards;
   }
 }
 
@@ -620,5 +645,3 @@ section {
 }
 
 //стили галереи LightGallery
-
-
