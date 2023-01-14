@@ -1261,16 +1261,109 @@ section {
           animation: appearanceY 0.6s 0.2s forwards;
 }
 
-.room__img-slider {
-  -webkit-transform: translateY(20%);
-      -ms-transform: translateY(20%);
-          transform: translateY(20%);
+.room__block-top .room__img-slider {
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   opacity: 0;
 }
 
-.room__img-slider._watcher-view {
-  -webkit-animation: appearanceY 0.6s 0.2s forwards;
-          animation: appearanceY 0.6s 0.2s forwards;
+.room__block-top._watcher-view .room__img-slider {
+  -webkit-animation: appearanceX 0.6s 0.2s forwards;
+          animation: appearanceX 0.6s 0.2s forwards;
+}
+
+.room__block-top .room__icons-item {
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  opacity: 0;
+}
+
+.room__block-top._watcher-view .room__icons-item {
+  -webkit-animation: appearanceX 0.6s 0.2s forwards;
+          animation: appearanceX 0.6s 0.2s forwards;
+}
+
+.room__block-top._watcher-view .room__icons-item:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.room__block-top._watcher-view .room__icons-item:nth-child(2) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.room__block-top._watcher-view .room__icons-item:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.room__block-top._watcher-view .room__icons-item:nth-child(4) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.room__block-top._watcher-view .room__icons-item:nth-child(5) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.room__block-top._watcher-view .room__icons-item:nth-child(6) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.room__block-top._watcher-view .room__icons-item:nth-child(7) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.room__block-top._watcher-view .room__icons-item:nth-child(8) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.room__block-top._watcher-view .room__icons-item:nth-child(9) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.room__block-top._watcher-view .room__icons-item:nth-child(10) {
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+
+.room__block-top._watcher-view .room__icons-item:nth-child(11) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.room__block-bottom .room__text {
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+}
+
+.room__block-bottom._watcher-view .room__text {
+  -webkit-animation: appearanceX 0.6s 0.2s forwards;
+          animation: appearanceX 0.6s 0.2s forwards;
+}
+
+.room__block-bottom .room__price-mobile,
+.room__block-bottom .spollers {
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  opacity: 0;
+}
+
+.room__block-bottom._watcher-view .room__price-mobile,
+.room__block-bottom._watcher-view .spollers {
+  -webkit-animation: appearanceX 0.6s 0.2s forwards;
+          animation: appearanceX 0.6s 0.2s forwards;
 }
 
 .room__text {
@@ -1283,73 +1376,6 @@ section {
 .room__text._watcher-view {
   -webkit-animation: appearanceX 0.6s 0.2s forwards;
           animation: appearanceX 0.6s 0.2s forwards;
-}
-
-.room__icons .room__icons-item {
-  -webkit-transform: translateX(50%);
-      -ms-transform: translateX(50%);
-          transform: translateX(50%);
-  opacity: 0;
-}
-
-.room__icons._watcher-view .room__icons-item {
-  -webkit-animation: appearanceX 0.6s 0.2s forwards;
-          animation: appearanceX 0.6s 0.2s forwards;
-}
-
-.room__icons._watcher-view .room__icons-item:nth-child(1) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.room__icons._watcher-view .room__icons-item:nth-child(2) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.room__icons._watcher-view .room__icons-item:nth-child(3) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.room__icons._watcher-view .room__icons-item:nth-child(4) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.room__icons._watcher-view .room__icons-item:nth-child(5) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.room__icons._watcher-view .room__icons-item:nth-child(6) {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-}
-
-.room__icons._watcher-view .room__icons-item:nth-child(7) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-
-.room__icons._watcher-view .room__icons-item:nth-child(8) {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-
-.room__icons._watcher-view .room__icons-item:nth-child(9) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.room__icons._watcher-view .room__icons-item:nth-child(10) {
-  -webkit-animation-delay: 1.1s;
-          animation-delay: 1.1s;
-}
-
-.room__icons._watcher-view .room__icons-item:nth-child(11) {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
 }
 
 .gallery__title {
@@ -2066,10 +2092,17 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-top: 16px;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.room__block-bottom .room__price-mobile {
+  display: none;
 }
 
 .room__spollers {
@@ -2080,7 +2113,7 @@ section {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  min-width: 250px;
+  min-width: 301px;
   row-gap: 10px;
 }
 
@@ -3676,6 +3709,23 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             flex-direction: column;
   }
 
+  .room__block-bottom {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+
+  .room__block-bottom .spollers {
+    display: none;
+  }
+
+  .room__block-bottom .room__price-mobile {
+    display: block;
+  }
+
   .room__title {
     display: block;
   }
@@ -3873,6 +3923,27 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .benefits__card-text {
     font-size: 16px;
+  }
+
+  .room__block-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .room__block-bottom .room__price-mobile {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .room__text {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .room__price td {
+    padding: 7px 10px;
   }
 
   .room__icons-item {
