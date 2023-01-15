@@ -74,6 +74,22 @@ body::after {
 
     &-privacy {
       max-width: 80%;
+
+      @media (max-width: $mobileSmall) {
+        max-width: unset;
+      }
+    }
+  }
+  // .popup__privacy
+
+  &__privacy {
+    font-size: 14px;
+
+    & ul li {
+      margin-bottom: 8px;
+    }
+    & ul li ul li {
+      margin-left: 12px;
     }
   }
 
@@ -126,6 +142,11 @@ body::after {
   &__title {
     text-align: center;
     margin-bottom: 40px;
+
+    @media (max-width: $mobileSmall) {
+      font-size: 22px !important;
+      margin-bottom: 20px;
+    }
   }
 
   // .popup__form
@@ -219,6 +240,10 @@ body::after {
   &:hover {
     color: $mainColorOrange;
   }
+  @media (max-width: $mobileSmall) {
+    font-size: 14px;
+    padding-left: 30px;
+  }
 }
 .checkbox-group input[type="checkbox"] + label:before {
   content: "";
@@ -232,6 +257,11 @@ body::after {
   top: 0;
   opacity: 0.6;
   transition: all 0.12s, border-color 0.08s;
+  
+  @media (max-width: $mobileSmall) {
+	top: -3px;
+
+  }
 }
 .checkbox-group input[type="checkbox"]:checked + label:before {
   width: 10px;
