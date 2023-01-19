@@ -2125,7 +2125,7 @@ section {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  min-width: 301px;
+  min-width: 402px;
   row-gap: 10px;
 }
 
@@ -2164,11 +2164,19 @@ section {
   white-space: nowrap;
 }
 
+.room__price .dop {
+  border: none;
+  -webkit-transform: translateX(25%);
+      -ms-transform: translateX(25%);
+          transform: translateX(25%);
+}
+
 .room__title {
   display: inline-block;
   position: relative;
   font-weight: 500;
   margin-bottom: 12px;
+  text-transform: capitalize;
 }
 
 @supports (font-size: clamp( 1.375rem , 1.0499457112rem  +  1.0857763301vw , 2rem )) {
@@ -4021,6 +4029,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .benefits__text {
     font-size: 16px;
+  }
+
+  .room__price td {
+    font-size: 14px;
+  }
+
+  .room__price .dop {
+    white-space: unset;
   }
 
   .room__desc {
