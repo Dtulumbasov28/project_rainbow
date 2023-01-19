@@ -120,7 +120,7 @@
   &__spollers {
     display: flex;
     flex-direction: column-reverse;
-    min-width: 301px;
+    min-width: 402px;
     row-gap: 10px;
 
     //  @media (max-width: $mobile) {
@@ -171,6 +171,17 @@
       @media (max-width: $mobile) {
         padding: 7px 10px;
       }
+      @media (max-width: $mobileSmall) {
+        font-size: 14px;
+      }
+    }
+    .dop {
+      border: none;
+      transform: translateX(25%);
+
+      @media (max-width: $mobileSmall) {
+        white-space: unset;
+      }
     }
   }
 
@@ -183,6 +194,7 @@
     position: relative;
     font-weight: 500;
     margin-bottom: 12px;
+    text-transform: capitalize;
 
     @media (max-width: $tablet) {
       // display: flex;
