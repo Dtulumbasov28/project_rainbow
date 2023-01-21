@@ -2169,6 +2169,7 @@ section {
   -webkit-transform: translateX(25%);
       -ms-transform: translateX(25%);
           transform: translateX(25%);
+  background: yellow;
 }
 
 .room__title {
