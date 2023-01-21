@@ -2171,6 +2171,7 @@ section {
           transform: translateX(25%);
   font-weight: 400;
   border: unset;
+  background-color: green;
 }
 
 .room__title {
