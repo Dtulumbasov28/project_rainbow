@@ -2152,7 +2152,7 @@ section {
   width: 100%;
   font-size: 17px;
   border: 1px solid #333333;
-  border-collapse: collapse;
+  border-collapse: separate;
 }
 
 .room__price tr {
