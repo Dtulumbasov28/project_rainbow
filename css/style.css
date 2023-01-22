@@ -2153,17 +2153,31 @@ section {
   font-size: 17px;
   border: 1px solid #333333;
   border-collapse: separate;
+  border-spacing: 0;
 }
 
 .room__price tr {
+  position: relative;
   text-align: center;
-  border: 1px solid;
+}
+
+.room__price tr::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.room__price tr.first::before {
+  background-color: unset;
 }
 
 .room__price td,
 .room__price th {
   padding: 10px 10px;
-  border: 1px solid;
   white-space: nowrap;
 }
 
@@ -2172,7 +2186,6 @@ section {
       -ms-transform: translateX(25%);
           transform: translateX(25%);
   font-weight: 400;
-  background-color: pink;
 }
 
 .room__title {
