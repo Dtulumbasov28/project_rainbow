@@ -2157,6 +2157,7 @@ section {
 
 .room__price tr {
   text-align: center;
+  border: 1px solid;
 }
 
 .room__price td,
