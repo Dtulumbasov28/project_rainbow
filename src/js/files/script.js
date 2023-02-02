@@ -62,78 +62,78 @@ function initYandexMap() {
 
 // or//
 
-function drawWeather(d) {
-	var celcius = Math.round(parseFloat(d.main.temp) - 273.15);
-	var fahrenheit = Math.round(((parseFloat(d.main.temp) - 273.15) * 1.8) + 32);
-	var description = d.weather[0].description;
+// function drawWeather(d) {
+// 	var celcius = Math.round(parseFloat(d.main.temp) - 273.15);
+// 	var fahrenheit = Math.round(((parseFloat(d.main.temp) - 273.15) * 1.8) + 32);
+// 	var description = d.weather[0].description;
 
-	document.getElementById('description').innerHTML = description;
-	document.getElementById('temp').innerHTML = celcius + '&deg;';
-	// document.getElementById('location').innerHTML = d.name;
+// 	document.getElementById('description').innerHTML = description;
+// 	document.getElementById('temp').innerHTML = celcius + '&deg;';
+// 	// document.getElementById('location').innerHTML = d.name;
 
-	if (description.indexOf('rain') > 0) {
-		document.body.className = 'rainy';
-	} else if (description.indexOf('cloud') > 0) {
-		document.body.className = 'cloudy';
-	} else if (description.indexOf('sunny') > 0) {
-		document.body.className = 'sunny';
-	}
-}
+// 	if (description.indexOf('rain') > 0) {
+// 		document.body.className = 'rainy';
+// 	} else if (description.indexOf('cloud') > 0) {
+// 		document.body.className = 'cloudy';
+// 	} else if (description.indexOf('sunny') > 0) {
+// 		document.body.className = 'sunny';
+// 	}
+// }
 
 
 //--------------------- Маска ввода номера телефона=
-window.addEventListener("DOMContentLoaded", function () {
-	[].forEach.call(document.querySelectorAll(".input-tel"), function (input) {
-		var keyCode;
-		function mask(event) {
-			event.keyCode && (keyCode = event.keyCode);
-			var pos = this.selectionStart;
-			if (pos < 3) event.preventDefault();
-			var matrix = "+7 (___) ___ ____",
-				i = 0,
-				def = matrix.replace(/\D/g, ""),
-				val = this.value.replace(/\D/g, ""),
-				new_value = matrix.replace(/[_\d]/g, function (a) {
-					return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
-				});
-			i = new_value.indexOf("_");
-			if (i != -1) {
-				i < 5 && (i = 3);
-				new_value = new_value.slice(0, i);
-			}
-			var reg = matrix
-				.substr(0, this.value.length)
-				.replace(/_+/g, function (a) {
-					return "\\d{1," + a.length + "}";
-				})
-				.replace(/[+()]/g, "\\$&");
-			reg = new RegExp("^" + reg + "$");
-			if (
-				!reg.test(this.value) ||
-				this.value.length < 5 ||
-				(keyCode > 47 && keyCode < 58)
-			)
-				this.value = new_value;
-			if (event.type == "blur" && this.value.length < 5) this.value = "";
-		}
+// window.addEventListener("DOMContentLoaded", function () {
+// 	[].forEach.call(document.querySelectorAll(".input-tel"), function (input) {
+// 		var keyCode;
+// 		function mask(event) {
+// 			event.keyCode && (keyCode = event.keyCode);
+// 			var pos = this.selectionStart;
+// 			if (pos < 3) event.preventDefault();
+// 			var matrix = "+7 (___) ___ ____",
+// 				i = 0,
+// 				def = matrix.replace(/\D/g, ""),
+// 				val = this.value.replace(/\D/g, ""),
+// 				new_value = matrix.replace(/[_\d]/g, function (a) {
+// 					return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
+// 				});
+// 			i = new_value.indexOf("_");
+// 			if (i != -1) {
+// 				i < 5 && (i = 3);
+// 				new_value = new_value.slice(0, i);
+// 			}
+// 			var reg = matrix
+// 				.substr(0, this.value.length)
+// 				.replace(/_+/g, function (a) {
+// 					return "\\d{1," + a.length + "}";
+// 				})
+// 				.replace(/[+()]/g, "\\$&");
+// 			reg = new RegExp("^" + reg + "$");
+// 			if (
+// 				!reg.test(this.value) ||
+// 				this.value.length < 5 ||
+// 				(keyCode > 47 && keyCode < 58)
+// 			)
+// 				this.value = new_value;
+// 			if (event.type == "blur" && this.value.length < 5) this.value = "";
+// 		}
 
-		input.addEventListener("input", mask, false);
-		input.addEventListener("focus", mask, false);
-		input.addEventListener("blur", mask, false);
-		input.addEventListener("keydown", mask, false);
-	});
-});
-
-
+// 		input.addEventListener("input", mask, false);
+// 		input.addEventListener("focus", mask, false);
+// 		input.addEventListener("blur", mask, false);
+// 		input.addEventListener("keydown", mask, false);
+// 	});
+// });
 
 
-var checkbox = document.getElementById("popup-form__input-checkbox");
-var btn_submit = document.querySelector(".popup-form__button");
 
-checkbox.addEventListener("change", () => {
-	if (checkbox.checked) {
-		btn_submit.removeAttribute("disabled");
-	} else {
-		btn_submit.setAttribute("disabled", true);
-	}
-});
+
+// var checkbox = document.getElementById("popup-form__input-checkbox");
+// var btn_submit = document.querySelector(".popup-form__button");
+
+// checkbox.addEventListener("change", () => {
+// 	if (checkbox.checked) {
+// 		btn_submit.removeAttribute("disabled");
+// 	} else {
+// 		btn_submit.setAttribute("disabled", true);
+// 	}
+// });

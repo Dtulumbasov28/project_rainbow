@@ -257,10 +257,9 @@ body::after {
   top: 0;
   opacity: 0.6;
   transition: all 0.12s, border-color 0.08s;
-  
-  @media (max-width: $mobileSmall) {
-	top: -3px;
 
+  @media (max-width: $mobileSmall) {
+    top: -3px;
   }
 }
 .checkbox-group input[type="checkbox"]:checked + label:before {
@@ -273,5 +272,4 @@ body::after {
   border-left-color: transparent;
   transform: rotate(45deg);
 }
-.button {
-}
+

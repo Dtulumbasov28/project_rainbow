@@ -120,7 +120,7 @@ const config = {
 					from: `${paths.src}/files`, to: `../files`,
 					noErrorOnMissing: true
 				}, {
-					from: `${paths.src}/favicon.ico`, to: `../`,
+					from: `${paths.src}/favicon.svg`, to: `../`,
 					noErrorOnMissing: true
 				}
 			],

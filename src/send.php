@@ -16,11 +16,10 @@ $message .= 'Имя: ' . $name . PHP_EOL;
 $message .= 'Телефон: ' . $tel . PHP_EOL;
 
 $sended = mail(
-	"tulumbasov.denis00@mail.ru
-	",
-	"Заявка на звонок",
+	"info@hotel-raduga.ru",
+	"Заявка на звонок - Радуга",
 	$message,
-	"From: admin@raduga.ru \r\n"
+	"From: info@hotel-raduga.ru \r\n"
 );
 
 if ($sended) {

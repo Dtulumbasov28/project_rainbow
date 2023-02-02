@@ -1,5 +1,4 @@
 .gallery {
-
   // .gallery__container
 
   &__container {
@@ -59,4 +58,13 @@
       }
     }
   }
+}
+#instawall-root84199 {
+  position: relative;
+}
+#instawall-root84199:before {
+  content: "*";
+  position: absolute;
+  top: 0;
+  left: 160px;
 }

@@ -7,3 +7,7 @@ version.json
 undefined
 **/*.zip
 **/*.rar
+send.php
+_metrics.htm
+_ticket.htm
+_gallery.htm

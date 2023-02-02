@@ -1,9 +1,9 @@
-<div id="popup" aria-hidden="true" class="popup">
+<!--<div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
 			<button data-close type="button" class="popup__close"></button>
 			<div class="popup__title title">Заказать звонок</div>
-			<form data-ajax action="send.php" method="POST" class="popup__form popup-form">
+			<form data-ajax data-popup-message="#form-sent" class="popup__form popup-form" action="send.php" method="POST">
 				<div class="popup-form__input-group">
 					<input required="" type="text" name="name" autocomplete="off"
 						onkeyup="this.value = this.value.replace(/[a-z0-9+= ]/gi,'');" class="popup-form__input">
@@ -18,14 +18,22 @@
 					<label for="popup-form__input-checkbox">Политика конфиденциальности</label>
 				</div>
 				<input type="submit" value="Отправить" class="popup-form__button">
-				<!-- <div class="popup-form__input-group">
+				<div class="popup-form__input-group">
 					<input data-datepicker type="text" name="" readonly class="popup-form__input">
 					<label class="popup-form__label">Дата заезда</label>
-				</div> -->
+				</div>
 			</form>
 		</div>
 	</div>
 </div>
+<div id="form-sent" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close"></button>
+			<div class="popup__title title">Ваша заявка принята, ожидайте звонка</div>
+		</div>
+	</div>
+</div>-->
 <div id="privacy" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content popup__content-privacy">

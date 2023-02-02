@@ -1,4 +1,4 @@
-// Модуль попапов
+	// Модуль попапов
 // (c) Фрилансер по жизни, Хмурый Кот
 // Документация по работе в шаблоне: https://template.fls.guru/template-docs/funkcional-popup.html
 // Сниппет (HTML): pl
@@ -102,7 +102,7 @@ class Popup {
 		this.options.init ? this.initPopups() : null
 	}
 	initPopups() {
-		this.popupLogging(`Проснулся`);
+		// this.popupLogging(`Проснулся`);
 		this.eventsPopup();
 	}
 	eventsPopup() {
